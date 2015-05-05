@@ -19,9 +19,8 @@ import Database.Persist.Sqlite
 import Pages
 import Model
 
-main = do args <- getArgs
-	  let p = if P.null args then 3000 else read $ P.head args
-	  scotty p $ do
+main = do envPort <- getEnv "PORT"
+	  scotty (read envPort) $ do
 	    liftIO $ runDB $ runMigration migrateAll
 	    middleware logStdoutDev
 	    middleware $ staticPolicy (noDots >-> addBase "static")
