@@ -19,6 +19,7 @@ import Database.Persist.Sqlite
 import Pages
 import Model
 
+
 main = do envPort <- getEnv "PORT"
 	  scotty (read envPort) $ do
 	    liftIO $ runDB $ runMigration migrateAll
