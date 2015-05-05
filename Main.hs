@@ -31,14 +31,20 @@ routes = do S.get "/" $ html "Hi"
 
 	    S.get "/users" $ do users <- liftIO getUsers
 				blaze $ userPageHtml $
-				  mconcat $ fmap (T.pack . show) users
+				  P.head $ fmap (T.pack . show) users
+
+	    S.get "/posts" $ do posts <- liftIO getAllPosts
+				blaze $ userPageHtml $
+				      mconcat $ fmap (T.pack . show) posts
+
 	    S.get "/users/:name" $ do name <- param "name"
 				      users <- liftIO $ getUsersByName name
-				      blaze $ userPageHtml $
-					mconcat $ fmap (T.pack . show) users
+				      if P.null users then next
+					 else blaze $ userPageHtml $
+						mconcat $ fmap (T.pack . show) users
 	    S.get "/create" $ (do name <- param "name"
 				  email <- param "email"
-				  usn <- param "usn" -- username
+				  usn <- param "usn"
 				  liftIO $ insertUser name email usn
 				  redirect $ "/users/" `mappend` T.pack name) `rescue` (\m -> text m)
 	    notFound $ text "nope"
@@ -53,4 +59,11 @@ getUsers = runDB $ selectList [] []
 
 insertUser n e u = runDB $ insert $ User n e u
 
-runDB = runSqlite "db.sqlite3" -- database file. ":memory:" for ram
+getAllPosts :: IO [Entity Post]
+getAllPosts = runDB $ selectList [] []
+
+getPostsByUserId :: UserId -> IO [Entity Post]
+getPostsByUserId uid = runDB $ selectList [PostAuthor ==. uid] []
+
+runDB = runSqlite "db.sqlite3"
+-- database file. ":memory:" for ram

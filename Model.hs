@@ -15,6 +15,7 @@ module Model where
 
 -- import Database.Persist
 import Database.Persist.TH
+import qualified Data.Text.Lazy as T
 
 share [mkPersist sqlSettings, mkMigrate "migrateAll"]
   [persistLowerCase|
@@ -23,5 +24,11 @@ share [mkPersist sqlSettings, mkMigrate "migrateAll"]
        email String
        username String
        UniqueUsername username  -- uniqueness constraint
+       deriving Show
+
+   Post
+       title String
+       content T.Text
+       author UserId
        deriving Show
   |]
