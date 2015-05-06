@@ -13,13 +13,13 @@ import Text.Blaze.Html.Renderer.Text as B
 import Network.Wai.Middleware.RequestLogger
 import Network.Wai.Middleware.Static
 
-import Database.Persist
+import Database.Persist as D
 import Database.Persist.Sqlite
 
 import Pages
 import Model
 
-
+-- TODO look into http://hackage.haskell.org/package/esqueleto-2.2/docs/Database-Esqueleto.html#g:6
 main = do envPort <- getEnv "PORT"
 	  scotty (read envPort) $ do
 	    liftIO $ runDB $ runMigration migrateAll
@@ -28,7 +28,7 @@ main = do envPort <- getEnv "PORT"
 	    routes
 
 routes :: ScottyM ()
-routes = do S.get "/" $ html "Hi"
+routes = do S.get "/" $ html "hi"
 
 	    S.get "/users" $ do users <- liftIO getUsers
 				blaze $ userPageHtml $
@@ -63,8 +63,8 @@ insertUser n e u = runDB $ insert $ User n e u
 getAllPosts :: IO [Entity Post]
 getAllPosts = runDB $ selectList [] []
 
-getPostsByUserId :: UserId -> IO [Entity Post]
-getPostsByUserId uid = runDB $ selectList [PostAuthor ==. uid] []
+-- getPostsByUserId :: Integral i => i -> IO [Entity Post]
+-- getPostsByUserId uid = runDB $ selectList [PostAuthor ==. i] []
 
 runDB = runSqlite "db.sqlite3"
 -- database file. ":memory:" for ram

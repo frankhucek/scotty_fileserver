@@ -8,6 +8,7 @@
 {-# LANGUAGE TypeFamilies               #-}
 {-# LANGUAGE TypeSynonymInstances       #-}
 {-# LANGUAGE MultiParamTypeClasses      #-}
+{-# LANGUAGE DeriveGeneric      #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
 {-# OPTIONS_GHC -fno-warn-orphans       #-}
 
@@ -19,16 +20,16 @@ import qualified Data.Text.Lazy as T
 
 share [mkPersist sqlSettings, mkMigrate "migrateAll"]
   [persistLowerCase|
-   User  -- UserId is automatically generated, primary key
-       name String  --UserName
+   User
+       name String
        email String
        username String
-       UniqueUsername username  -- uniqueness constraint
+       UniqueUsn username
        deriving Show
 
    Post
        title String
        content T.Text
-       author UserId
+       authorId UserId -- foreign key constraint onto primary key
        deriving Show
   |]
