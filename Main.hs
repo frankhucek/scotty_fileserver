@@ -1,70 +1,72 @@
-{-# LANGUAGE OverloadedStrings #-}
-import Prelude as P
-import System.Environment
+{-# LANGUAGE OverloadedStrings   #-}
+{-# LANGUAGE ScopedTypeVariables #-}
 
-import Data.Monoid (mconcat, mappend)
+module Main where
 
-import Data.Text.Lazy as T
+import           Control.Monad.IO.Class               (liftIO)
+import           Data.Monoid                          (mappend, mconcat)
+import           Data.Text.Lazy                       as T
+import           Prelude                              as P
+import           System.Environment
 
-import Control.Monad.IO.Class (liftIO)
+import qualified Network.Wai.Middleware.HttpAuth      as Auth
+import           Network.Wai.Middleware.RequestLogger
+import           Network.Wai.Middleware.Static
+import           Text.Blaze.Html.Renderer.Text        as B
+import           Web.Scotty                           as S
 
-import Web.Scotty as S
-import Text.Blaze.Html.Renderer.Text as B
-import Network.Wai.Middleware.RequestLogger
-import Network.Wai.Middleware.Static
+import           Pages
 
-import Database.Persist as D
-import Database.Persist.Sqlite
+-- for servedir
+import           Control.Monad
+import           System.Directory                     (doesDirectoryExist,
+                                                       doesFileExist,
+                                                       getDirectoryContents)
 
-import Pages
-import Model
+-- look into 'files' in Web.Scoty for uploads
 
--- TODO look into http://hackage.haskell.org/package/esqueleto-2.2/docs/Database-Esqueleto.html#g:6
 main = do envPort <- getEnv "PORT"
-	  scotty (read envPort) $ do
-	    liftIO $ runDB $ runMigration migrateAll
-	    middleware logStdoutDev
-	    middleware $ staticPolicy (noDots >-> addBase "static")
-	    routes
+          scotty (read envPort) $ do
+            middleware logStdoutDev
+            middleware static
+            middleware $ Auth.basicAuth
+              (\u p -> return $ u == "REDACTED" && p == "REDACTED") " Welcome "
+            routes
 
 routes :: ScottyM ()
 routes = do S.get "/" $ html "hi"
 
-	    S.get "/users" $ do users <- liftIO getUsers
-				blaze $ userPageHtml $
-				  P.head $ fmap (T.pack . show) users
+            S.get "/testing" $ serveDir "stuff/"
 
-	    S.get "/posts" $ do posts <- liftIO getAllPosts
-				blaze $ userPageHtml $
-				      mconcat $ fmap (T.pack . show) posts
+            S.get (regex "^/files/$") $ do serveDir ""  -- directory names must end in '/'
 
-	    S.get "/users/:name" $ do name <- param "name"
-				      users <- liftIO $ getUsersByName name
-				      if P.null users then next
-					 else blaze $ userPageHtml $
-						mconcat $ fmap (T.pack . show) users
-	    S.get "/create" $ (do name <- param "name"
-				  email <- param "email"
-				  usn <- param "usn"
-				  liftIO $ insertUser name email usn
-				  redirect $ "/users/" `mappend` T.pack name) `rescue` (\m -> text m)
-	    notFound $ text "nope"
+            S.get (regex "^/files/(.+/)$") $ do (fp :: String) <- param "1"
+                                                liftIO $ print fp
+                                                serveDir fp
+
+            S.get (regex "^/files/(.*[^/])$") $ do (fp :: String) <- param "1"
+                                                   file' $ fp
+
+            S.get "/files/:file" $ do fname <- param "file"
+                                      file' $ fname
+
+            S.notFound $ html "not here"
 
 blaze = S.html . renderHtml
 
-getUsersByName :: T.Text -> IO [Entity User]
-getUsersByName name = runDB $ selectList [UserName ==. T.unpack name] [LimitTo 5]
+file' :: String -> ActionM ()
+file' f = file $ prefix `mappend` f
 
-getUsers :: IO [Entity User]  -- select * from User;
-getUsers = runDB $ selectList [] []
+dirInfo :: String -> IO ([String], [String])
+dirInfo p = do let path = prefix ++ p
+               entries <- liftIO $ getDirectoryContents path
+               fs <- liftIO $ filterM (doesFileExist . (path ++)) entries
+               ds <- liftIO $ filterM (doesDirectoryExist . ( path ++)) entries
+               liftIO $ print path >> print entries >> print fs >> print ds -- debugging
+               return (fs, ds)
 
-insertUser n e u = runDB $ insert $ User n e u
+serveDir p = do (fs, ds) <- liftIO $ dirInfo p
+                blaze $ template p $ renderDir p fs ds
 
-getAllPosts :: IO [Entity Post]
-getAllPosts = runDB $ selectList [] []
-
--- getPostsByUserId :: Integral i => i -> IO [Entity Post]
--- getPostsByUserId uid = runDB $ selectList [PostAuthor ==. i] []
-
-runDB = runSqlite "db.sqlite3"
--- database file. ":memory:" for ram
+prefix :: String
+prefix = "static/" -- "/home/miles/haskell/scotty/fileserver/static/"
