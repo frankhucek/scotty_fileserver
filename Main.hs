@@ -2,13 +2,14 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 
 module Main where
-
 import           Control.Monad.IO.Class               (liftIO)
 import           Data.Monoid                          (mappend, mconcat)
 import           Data.Text.Lazy                       as T
 import           Prelude                              as P
 import           System.Environment
+import           System.IO
 
+import           Data.ByteString.Char8                as BS (pack)
 import qualified Network.Wai.Middleware.HttpAuth      as Auth
 import           Network.Wai.Middleware.RequestLogger
 import           Network.Wai.Middleware.Static
@@ -26,11 +27,17 @@ import           System.Directory                     (doesDirectoryExist,
 -- look into 'files' in Web.Scoty for uploads
 
 main = do envPort <- getEnv "PORT"
+          h <- openFile "auth.txt" ReadMode
+          c <- hGetContents h
+          let l = P.lines c
           scotty (read envPort) $ do
             middleware logStdoutDev
             middleware static
-            middleware $ Auth.basicAuth
-              (\u p -> return $ u == "REDACTED" && p == "REDACTED") " Welcome "
+            when (P.length l == 2) $ do
+              let usn = l !! 0
+                  passwd = l !! 1
+              middleware $ Auth.basicAuth
+                (\u p -> return $ u == (BS.pack usn) && p == (BS.pack passwd)) " Welcome "
             routes
 
 routes :: ScottyM ()
