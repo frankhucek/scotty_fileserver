@@ -57,6 +57,17 @@ routes = do S.get "/" $ html "hi"
             S.get "/files/:file" $ do fname <- param "file"
                                       file' $ fname
 
+
+-- first steps toward file upload
+-- see https://hackage.haskell.org/package/scotty-0.9.0/docs/Web-Scotty.html#t:File
+-- and https://hackage.haskell.org/package/wai-extra-3.0.2.1/docs/Network-Wai-Parse.html#t:FileInfo
+
+            S.get "/upload" $ blaze uploadPage
+
+            S.post "/uploaded" $ do fs <- files
+                                    html $ T.pack $ show fs
+
+
             S.notFound $ html "not here"
 
 blaze = S.html . renderHtml

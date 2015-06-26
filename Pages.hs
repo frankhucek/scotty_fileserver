@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Pages (template, renderText, renderDir) where
+module Pages (template, renderText, renderDir, uploadPage) where
 
 
 import           Text.Blaze.Html.Renderer.Text
@@ -31,6 +31,21 @@ renderDir dir fs ds =
     frows
     tr (td ! A.style "border-bottom:1px solid black" $ "directories")
     drows
+
+
+uploadPage :: Html
+uploadPage = template "upload form" $ do
+  H.form ! enctype "multipart/form-data" ! A.method "POST" ! action "/uploaded" $ do
+    input ! type_ "file" ! name "file_upload" ! size "40" ! A.multiple ""
+    table ! A.style "width:5px" $ do
+      tr $ do
+        td $ toHtml ("Directory: "::String)
+        td $ input ! type_ "text" ! name "directory"
+      tr $ do
+        td $ input ! type_ "submit" ! value "upload"
+
+
+
 
 
 template :: String -> Html -> Html
