@@ -1,0 +1,556 @@
+Setting phasers to stun... (port 4242) (ctrl-c to quit)
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000329s
+"movies/archer_vice/"
+"served_files/movies/archer_vice/"
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","..","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4",".","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["..","."]
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.005389s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000078s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m401 Unauthorized[0m 0.0001s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m404 Not Found[0m 0.000331s
+"movies/archer_vice/"
+"served_files/movies/archer_vice/"
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","..","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4",".","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["..","."]
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.002031s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000079s
+[36mGET[0m /files/movies/archer_vice/05.10%20-%20Palace%20Intrigue%20Part%201.mp4
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000614s
+[36mGET[0m /files/movies/archer_vice/05.13%20-%20Arrival%20Departure.mp4.mkv
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000382s
+[36mGET[0m /files/movies/archer_vice/05.13%20-%20Arrival%20Departure.mp4.mkv
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000382s
+[36mGET[0m /files/movies/archer_vice/05.13%20-%20Arrival%20Departure.mp4.mkv
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000567s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.00006s
+[36mGET[0m /files/movies/archer_vice/05.13%20-%20Arrival%20Departure.mp4.mkv
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000116s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000058s
+[36mGET[0m /files/movies/archer_vice/05.13%20-%20Arrival%20Departure.mp4.mkv
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000384s
+[36mGET[0m /files/movies/archer_vice/05.13%20-%20Arrival%20Departure.mp4.mkv
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000546s
+"movies/archer_vice/"
+"served_files/movies/archer_vice/"
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","..","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4",".","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["..","."]
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.002088s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000077s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000083s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m404 Not Found[0m 0.000202s
+[36mGET[0m /files/movies/archer_vice/05.13%20-%20Arrival%20Departure.mp4.mkv
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000492s
+[36mGET[0m /files/movies/archer_vice/05.13%20-%20Arrival%20Departure.mp4.mkv
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000382s
+[36mGET[0m /files/movies/archer_vice/05.13%20-%20Arrival%20Departure.mp4.mkv
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000372s
+[36mGET[0m /files/movies/archer_vice/05.13%20-%20Arrival%20Departure.mp4.mkv
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000518s
+[36mGET[0m /files/movies/archer_vice/05.13%20-%20Arrival%20Departure.mp4.mkv
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000376s
+[36mGET[0m /files/movies/archer_vice/05.13%20-%20Arrival%20Departure.mp4.mkv
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000452s
+[36mGET[0m /files/movies/archer_vice/05.13%20-%20Arrival%20Departure.mp4.mkv
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000574s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000059s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000071s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000057s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000069s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000071s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000084s
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000101s
+"movies/archer_vice/"
+"served_files/movies/archer_vice/"
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","..","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4",".","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["..","."]
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001752s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000079s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000082s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m404 Not Found[0m 0.0002s
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000102s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.00006s
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000098s
+"movies/archer_vice/"
+"served_files/movies/archer_vice/"
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","..","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4",".","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["..","."]
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001901s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000078s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000082s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m404 Not Found[0m 0.000201s
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000098s
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000099s
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000101s
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000098s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000057s
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000098s
+"movies/archer_vice/"
+"served_files/movies/archer_vice/"
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","..","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4",".","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["..","."]
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001924s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000078s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000082s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m404 Not Found[0m 0.000306s
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000097s
+"movies/archer_vice/"
+"served_files/movies/archer_vice/"
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","..","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4",".","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["..","."]
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001909s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000079s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000082s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m404 Not Found[0m 0.000202s
+"movies/"
+"served_files/movies/"
+["QI","Utopia.1x01.HDTV.x264-FoV.mp4","archer_vice","Terry Pratchett's Discworld Movies and TV collection","Rick_and_Morty","..","Seinfeld","rm.tar","Utopia.1x01.HDTV.x264-FoV.mp4.mkv","afile",".","Guardians of the Galaxy (2014) [1080p]"]
+["Utopia.1x01.HDTV.x264-FoV.mp4","rm.tar","Utopia.1x01.HDTV.x264-FoV.mp4.mkv","afile"]
+["QI","archer_vice","Terry Pratchett's Discworld Movies and TV collection","Rick_and_Morty","..","Seinfeld",".","Guardians of the Galaxy (2014) [1080p]"]
+[36mGET[0m /files/movies/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001141s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000079s
+"served_files/"
+["dbproj_backups","books","movies","school","ESPN_backup_4_26_4.sql","music","getytdur.sh","..","ex1.db","text","ESPN_backup_4_27.sql","words.ps","images","."]
+["ESPN_backup_4_26_4.sql","getytdur.sh","ex1.db","ESPN_backup_4_27.sql","words.ps"]
+["dbproj_backups","books","movies","school","music","..","text","images","."]
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000958s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000077s
+"dbproj_backups/"
+"served_files/dbproj_backups/"
+["ESPN_backup_4_26_4.sql","team_insert.sql","ESPN_backup_4_26_2.sql","foreign_keys.sql","kdrp","..","add_values.sql","README.txt","ESPN_backup_4_26.sql","pms_insert.sql","trigger.sql","game_insert.sql","fix_pms.sql","create_tables.sql","player_insert2.sql","."]
+["ESPN_backup_4_26_4.sql","team_insert.sql","ESPN_backup_4_26_2.sql","foreign_keys.sql","kdrp","add_values.sql","README.txt","ESPN_backup_4_26.sql","pms_insert.sql","trigger.sql","game_insert.sql","fix_pms.sql","create_tables.sql","player_insert2.sql"]
+["..","."]
+[36mGET[0m /files/dbproj_backups/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.030302s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000078s
+[36mGET[0m /files/dbproj_backups/add_values.sql
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000322s
+[36mGET[0m /files/dbproj_backups/ESPN_backup_4_26_4.sql
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000345s
+[36mGET[0m /files/dbproj_backups/ESPN_backup_4_26_4.sql
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000106s
+[36mGET[0m /files/dbproj_backups/ESPN_backup_4_26_4.sql
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000339s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000082s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m404 Not Found[0m 0.000203s
+[36mGET[0m /files/dbproj_backups/ESPN_backup_4_26_4.sql
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000106s
+[36mGET[0m /files/dbproj_backups/ESPN_backup_4_26_4.sql
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000341s
+"dbproj_backups/"
+"served_files/dbproj_backups/"
+["ESPN_backup_4_26_4.sql","team_insert.sql","ESPN_backup_4_26_2.sql","foreign_keys.sql","kdrp","..","add_values.sql","README.txt","ESPN_backup_4_26.sql","pms_insert.sql","trigger.sql","game_insert.sql","fix_pms.sql","create_tables.sql","player_insert2.sql","."]
+["ESPN_backup_4_26_4.sql","team_insert.sql","ESPN_backup_4_26_2.sql","foreign_keys.sql","kdrp","add_values.sql","README.txt","ESPN_backup_4_26.sql","pms_insert.sql","trigger.sql","game_insert.sql","fix_pms.sql","create_tables.sql","player_insert2.sql"]
+["..","."]
+[36mGET[0m /files/dbproj_backups/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001199s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000079s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000083s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m404 Not Found[0m 0.000202s
+"served_files/"
+["dbproj_backups","books","movies","school","ESPN_backup_4_26_4.sql","music","getytdur.sh","..","ex1.db","text","ESPN_backup_4_27.sql","words.ps","images","."]
+["ESPN_backup_4_26_4.sql","getytdur.sh","ex1.db","ESPN_backup_4_27.sql","words.ps"]
+["dbproj_backups","books","movies","school","music","..","text","images","."]
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001052s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000078s
+[36mGET[0m /upload
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000208s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000078s
+consuming body
+consuming body
+[33mPOST[0m /uploaded
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 72.883742s
+"served_files/"
+["dbproj_backups","books","movies","school","ESPN_backup_4_26_4.sql","music","getytdur.sh","..","ex1.db","text","ESPN_backup_4_27.sql","words.ps","images","Euthyphro.pdf","."]
+["ESPN_backup_4_26_4.sql","getytdur.sh","ex1.db","ESPN_backup_4_27.sql","words.ps","Euthyphro.pdf"]
+["dbproj_backups","books","movies","school","music","..","text","images","."]
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000955s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000079s
+[36mGET[0m /files/Euthyphro.pdf
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000276s
+[36mGET[0m /files/Euthyphro.pdf
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000268s
+[36mGET[0m /files/Euthyphro.pdf
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000334s
+[36mGET[0m /files/words.ps
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000257s
+[36mGET[0m /files/Euthyphro.pdf
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000271s
+[36mGET[0m /files/Euthyphro.pdf
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.00027s
+[36mGET[0m /files/Euthyphro.pdf
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000274s
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000086s
+"served_files/"
+["dbproj_backups","books","movies","school","ESPN_backup_4_26_4.sql","music","getytdur.sh","..","ex1.db","text","ESPN_backup_4_27.sql","words.ps","images","Euthyphro.pdf","."]
+["ESPN_backup_4_26_4.sql","getytdur.sh","ex1.db","ESPN_backup_4_27.sql","words.ps","Euthyphro.pdf"]
+["dbproj_backups","books","movies","school","music","..","text","images","."]
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001105s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000078s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000081s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m404 Not Found[0m 0.000199s
+[36mGET[0m /te'
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m404 Not Found[0m 0.000203s
+[36mGET[0m /testing
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000148s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000079s
+[36mGET[0m /files/movies/archer_vice/05.10%20-%20Palace%20Intrigue%20Part%201.mp4
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000386s
+"movies/"
+"served_files/movies/"
+["QI","Utopia.1x01.HDTV.x264-FoV.mp4","archer_vice","Terry Pratchett's Discworld Movies and TV collection","Rick_and_Morty","..","Seinfeld","rm.tar","Utopia.1x01.HDTV.x264-FoV.mp4.mkv","afile",".","Guardians of the Galaxy (2014) [1080p]"]
+["Utopia.1x01.HDTV.x264-FoV.mp4","rm.tar","Utopia.1x01.HDTV.x264-FoV.mp4.mkv","afile"]
+["QI","archer_vice","Terry Pratchett's Discworld Movies and TV collection","Rick_and_Morty","..","Seinfeld",".","Guardians of the Galaxy (2014) [1080p]"]
+[36mGET[0m /files/movies/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001087s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000077s
+"movies/archer_vice/"
+"served_files/movies/archer_vice/"
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","..","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4",".","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["..","."]
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001841s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000091s
+[36mGET[0m /files/movies/archer_vice/05.09%20-%20On%20the%20Carpet.mp4.mkv
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000371s
+[36mGET[0m /files/movies/archer_vice/05.09%20-%20On%20the%20Carpet.mp4.mkv
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000528s
+[36mGET[0m /files/movies/archer_vice/05.09%20-%20On%20the%20Carpet.mp4.mkv
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000131s
+[36mGET[0m /files/movies/archer_vice/05.09%20-%20On%20the%20Carpet.mp4.mkv
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000112s
+[36mGET[0m /files/movies/archer_vice/05.09%20-%20On%20the%20Carpet.mp4.mkv
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000374s
+[36mGET[0m /files/movies/archer_vice/05.09%20-%20On%20the%20Carpet.mp4.mkv
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000504s
+"movies/archer_vice/"
+"served_files/movies/archer_vice/"
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","..","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4",".","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["..","."]
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.002376s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000074s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000083s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m404 Not Found[0m 0.000198s
+"movies/"
+"served_files/movies/"
+["QI","Utopia.1x01.HDTV.x264-FoV.mp4","archer_vice","Terry Pratchett's Discworld Movies and TV collection","Rick_and_Morty","..","Seinfeld","rm.tar","Utopia.1x01.HDTV.x264-FoV.mp4.mkv","afile",".","Guardians of the Galaxy (2014) [1080p]"]
+["Utopia.1x01.HDTV.x264-FoV.mp4","rm.tar","Utopia.1x01.HDTV.x264-FoV.mp4.mkv","afile"]
+["QI","archer_vice","Terry Pratchett's Discworld Movies and TV collection","Rick_and_Morty","..","Seinfeld",".","Guardians of the Galaxy (2014) [1080p]"]
+[36mGET[0m /files/movies/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001148s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000078s
+"served_files/"
+["dbproj_backups","books","movies","school","ESPN_backup_4_26_4.sql","music","getytdur.sh","..","ex1.db","text","ESPN_backup_4_27.sql","words.ps","images","Euthyphro.pdf","."]
+["ESPN_backup_4_26_4.sql","getytdur.sh","ex1.db","ESPN_backup_4_27.sql","words.ps","Euthyphro.pdf"]
+["dbproj_backups","books","movies","school","music","..","text","images","."]
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001044s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000078s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000077s
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000087s
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000086s
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000089s
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000087s
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000087s
+"served_files/"
+["dbproj_backups","books","movies","school","ESPN_backup_4_26_4.sql","music","getytdur.sh","..","ex1.db","text","ESPN_backup_4_27.sql","words.ps","images","Euthyphro.pdf","."]
+["ESPN_backup_4_26_4.sql","getytdur.sh","ex1.db","ESPN_backup_4_27.sql","words.ps","Euthyphro.pdf"]
+["dbproj_backups","books","movies","school","music","..","text","images","."]
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001195s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000077s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000081s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m404 Not Found[0m 0.000255s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000056s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000059s
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.023151s
+"served_files/"
+["dbproj_backups","reddit_data","books","movies","school","ESPN_backup_4_26_4.sql","7690F71EA949B868080401C749E878F98DE34D3D.meta","32916AD30CE4C90EE4C47A95BD0075E44AC15DD2.meta","music","getytdur.sh","..","ex1.db","text","ESPN_backup_4_27.sql","words.ps","images","Euthyphro.pdf","RC_2015-01.bz2","."]
+["ESPN_backup_4_26_4.sql","7690F71EA949B868080401C749E878F98DE34D3D.meta","32916AD30CE4C90EE4C47A95BD0075E44AC15DD2.meta","getytdur.sh","ex1.db","ESPN_backup_4_27.sql","words.ps","Euthyphro.pdf","RC_2015-01.bz2"]
+["dbproj_backups","reddit_data","books","movies","school","music","..","text","images","."]
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.111563s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.022001s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m401 Unauthorized[0m 0.00008s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m404 Not Found[0m 0.000155s
+"reddit_data/"
+"served_files/reddit_data/"
+["2011","2008","README","2015","..","2012","2014","2010","2013","2009","2007","."]
+["README"]
+["2011","2008","2015","..","2012","2014","2010","2013","2009","2007","."]
+[36mGET[0m /files/reddit_data/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.083492s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000109s
+"reddit_data/2007/"
+"served_files/reddit_data/2007/"
+["..","RC_2007-10.bz2","RC_2007-11.bz2","RC_2007-12.bz2","."]
+["RC_2007-10.bz2","RC_2007-11.bz2","RC_2007-12.bz2"]
+["..","."]
+[36mGET[0m /files/reddit_data/2007/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001782s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000078s
+[36mGET[0m /files/reddit_data/2007/RC_2007-10.bz2
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000344s
+[36mGET[0m /files/RC_2015-01.bz2
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000279s
+[36mGET[0m /files/Euthyphro.pdf
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000275s
+[36mGET[0m /files/words.ps
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000262s
+"movies/"
+"served_files/movies/"
+["QI","Utopia.1x01.HDTV.x264-FoV.mp4","archer_vice","Terry Pratchett's Discworld Movies and TV collection","Rick_and_Morty","..","Seinfeld","rm.tar","Utopia.1x01.HDTV.x264-FoV.mp4.mkv","afile",".","Guardians of the Galaxy (2014) [1080p]"]
+["Utopia.1x01.HDTV.x264-FoV.mp4","rm.tar","Utopia.1x01.HDTV.x264-FoV.mp4.mkv","afile"]
+["QI","archer_vice","Terry Pratchett's Discworld Movies and TV collection","Rick_and_Morty","..","Seinfeld",".","Guardians of the Galaxy (2014) [1080p]"]
+[36mGET[0m /files/movies/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.026282s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000078s
+"served_files/"
+["dbp

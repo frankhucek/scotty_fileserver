@@ -3,17 +3,19 @@
 
 module Main where
 import           Control.Monad.IO.Class               (liftIO)
-import           Data.Monoid                          (mappend, mconcat)
-import           Data.Text.Lazy                       as T
+import           Data.Monoid                          ((<>))
+import qualified Data.Text.Lazy                       as T
 import           Prelude                              as P
 import           System.Environment
 import           System.IO
 
-import           Data.ByteString.Char8                as BS (pack)
+import           Data.ByteString.Char8                as B (elem, pack, unpack)
+import           Data.ByteString.Lazy.Char8           as BL (writeFile)
+
 import qualified Network.Wai.Middleware.HttpAuth      as Auth
 import           Network.Wai.Middleware.RequestLogger
 import           Network.Wai.Middleware.Static
-import           Text.Blaze.Html.Renderer.Text        as B
+import           Text.Blaze.Html.Renderer.Text        (renderHtml)
 import           Web.Scotty                           as S
 
 import           Pages
@@ -23,6 +25,9 @@ import           Control.Monad
 import           System.Directory                     (doesDirectoryExist,
                                                        doesFileExist,
                                                        getDirectoryContents)
+-- for upload handling
+import           Network.Wai.Parse                    as N (fileContent,
+                                                            fileName)
 
 -- look into 'files' in Web.Scoty for uploads
 
@@ -37,34 +42,30 @@ main = do envPort <- getEnv "PORT"
               let usn = l !! 0
                   passwd = l !! 1
               middleware $ Auth.basicAuth
-                (\u p -> return $ u == (BS.pack usn) && p == (BS.pack passwd)) " Welcome "
+                (\u p -> return $ u == B.pack usn && p == B.pack passwd) " Welcome "
             routes
 
 routes :: ScottyM ()
-routes = do S.get "/" $ html "hi"
+routes = do S.get "/" $ blaze $ template "HOME" homePage
 
-            S.get "/testing" $ serveDir "stuff/"
+            S.get "/testing" $ blaze $ videoPage $ "/files/movies/archer_vice/05.10%20-%20Palace%20Intrigue%20Part%201.mp4"
 
-            S.get (regex "^/files/$") $ do serveDir ""  -- directory names must end in '/'
+            S.get (regex "^/files/$") $ serveDir ""  -- directory names must end in '/'
 
             S.get (regex "^/files/(.+/)$") $ do (fp :: String) <- param "1"
                                                 liftIO $ print fp
                                                 serveDir fp
 
             S.get (regex "^/files/(.*[^/])$") $ do (fp :: String) <- param "1"
-                                                   file' $ fp
+                                                   file' fp
 
             S.get "/files/:file" $ do fname <- param "file"
-                                      file' $ fname
-
-
--- first steps toward file upload
--- see https://hackage.haskell.org/package/scotty-0.9.0/docs/Web-Scotty.html#t:File
--- and https://hackage.haskell.org/package/wai-extra-3.0.2.1/docs/Network-Wai-Parse.html#t:FileInfo
+                                      file' fname
 
             S.get "/upload" $ blaze uploadPage
 
             S.post "/uploaded" $ do fs <- files
+                                    liftIO $ handleFiles fs
                                     html $ T.pack $ show fs
 
 
@@ -73,7 +74,7 @@ routes = do S.get "/" $ html "hi"
 blaze = S.html . renderHtml
 
 file' :: String -> ActionM ()
-file' f = file $ prefix `mappend` f
+file' f = file $ prefix <> f
 
 dirInfo :: String -> IO ([String], [String])
 dirInfo p = do let path = prefix ++ p
@@ -87,4 +88,13 @@ serveDir p = do (fs, ds) <- liftIO $ dirInfo p
                 blaze $ template p $ renderDir p fs ds
 
 prefix :: String
-prefix = "static/" -- "/home/miles/haskell/scotty/fileserver/static/"
+prefix = "served_files/" -- "/home/miles/haskell/scotty/fileserver/static/"
+
+-- type File = (Text, FileInfo ByteString) -- (field where came from, info)
+-- FileInfo { fileName :: ByteString, fileContentType :: ByteString, fileContent :: c }
+handleFiles :: [S.File] -> IO ()
+handleFiles fs = let fis = map snd fs
+                     fis' = filter (\f -> not ('/' `B.elem` fileName f))  fis
+                 in void $ forM fis' $
+                    \f ->
+                     BL.writeFile (B.unpack (B.pack prefix  <> fileName f)) $ fileContent f
