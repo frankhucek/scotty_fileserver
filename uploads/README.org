@@ -1,5 +1,0 @@
-* Requrements
-** Haskell
-   listed in pix.cabal
-** Other
-   - ~devIL~ image processing library

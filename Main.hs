@@ -53,6 +53,7 @@ routes = do S.get "/" $ blaze $ template "HOME" homePage
             S.get (regex "^/files/$") $ serveDir ""  -- directory names must end in '/'
 
             S.get (regex "^/files/(.+/)$") $ do (fp :: String) <- param "1"
+                                                liftIO $ print $ "opening directory: " ++ fp
                                                 liftIO $ print fp
                                                 serveDir fp
 

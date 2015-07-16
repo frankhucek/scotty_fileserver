@@ -21,10 +21,10 @@ homePage = renderText "home"
 
 renderDir :: String -> [String] -> [String] -> Html
 renderDir dir fs ds =
-  let frows = foldl1 (>>) $ fmap
+  let frows = foldl (>>) mempty $ fmap
               (\f -> tr . td .
                      (a ! href (toValue $ mconcat ["/files/", dir, f])) $ toHtml f) fs
-      drows = foldl1 (>>) $ fmap
+      drows = foldl (>>) mempty $ fmap
               (\d -> tr. td .
                      (a ! href (toValue $ mconcat ["/files/", dir, d, "/"])) $ toHtml d) ds
   in html $ body $ table $ do
