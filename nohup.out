@@ -1023,3 +1023,548 @@ Prelude.foldl1: empty list
 []
 ["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","ThePrelude.foldl1: empty list
 Prelude.foldl1: empty list
+Setting phasers to stun... (port 4242) (ctrl-c to quit)
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.040471s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.030236s
+"served_files/"
+["dbproj_backups","tpaudio","reddit_data","books","movies","school","music","tpaudio.tar.gz","..","text","words.ps","images","RC_2015-01.bz2","."]
+["tpaudio.tar.gz","words.ps","RC_2015-01.bz2"]
+["dbproj_backups","tpaudio","reddit_data","books","movies","school","music","..","text","images","."]
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.240823s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000078s
+"served_files/"
+["dbproj_backups","tpaudio","reddit_data","books","movies","school","music","tpaudio.tar.gz","..","text","words.ps","images","RC_2015-01.bz2","."]
+["tpaudio.tar.gz","words.ps","RC_2015-01.bz2"]
+["dbproj_backups","tpaudio","reddit_data","books","movies","school","music","..","text","images","."]
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001178s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000079s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","..tar","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+["..tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001871s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000077s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","..tar","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+["..tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.002171s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000058s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+["Book 01 - The Colour of Magic.tar","Book 32 - A Hat Full of Sky.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.050819s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000059s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+["Book 18 - Maskerade.tar","Book 01 - The Colour of Magic.tar","Book 09 - Eric.tar","Book 32 - A Hat Full of Sky.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001855s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000056s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+["Book 18 - Maskerade.tar","Book 14 - Lords and Ladies.tar","Book 01 - The Colour of Magic.tar","Book 09 - Eric.tar","Book 32 - A Hat Full of Sky.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001942s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000199s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+["Book 18 - Maskerade.tar","Book 14 - Lords and Ladies.tar","Book 01 - The Colour of Magic.tar","Book 09 - Eric.tar","Book 32 - A Hat Full of Sky.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.002578s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000081s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+["Book 18 - Maskerade.tar","Book 14 - Lords and Ladies.tar","Book 01 - The Colour of Magic.tar","Book 09 - Eric.tar","Book 32 - A Hat Full of Sky.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.01489s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000059s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","Bromeliad Trilogy 02 Diggers.tar","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Book 21 - Jingo.tar","Strata",".","Book 30 - The Wee Free Men","Book 34 - Thud.tar"]
+["Book 18 - Maskerade.tar","Bromeliad Trilogy 02 Diggers.tar","Book 14 - Lords and Ladies.tar","Book 01 - The Colour of Magic.tar","Book 09 - Eric.tar","Book 32 - A Hat Full of Sky.tar","Book 21 - Jingo.tar","Book 34 - Thud.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.002221s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.00006s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","The Carpet People.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","Bromeliad Trilogy 02 Diggers.tar","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 31 - Monstrous Regiment.tar","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 33 - Going Postal.tar","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 06 - Wyrd Sisters.tar","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Book 21 - Jingo.tar","Strata",".","Book 30 - The Wee Free Men","Book 34 - Thud.tar"]
+["Book 18 - Maskerade.tar","The Carpet People.tar","Bromeliad Trilogy 02 Diggers.tar","Book 14 - Lords and Ladies.tar","Book 31 - Monstrous Regiment.tar","Book 01 - The Colour of Magic.tar","Book 09 - Eric.tar","Book 33 - Going Postal.tar","Book 32 - A Hat Full of Sky.tar","Book 06 - Wyrd Sisters.tar","Book 21 - Jingo.tar","Book 34 - Thud.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.02076s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000061s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","The Carpet People.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","Bromeliad Trilogy 02 Diggers.tar","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 01 Truckers","Book 35 - Wintersmith.tar","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth","..","Book 31 - Monstrous Regiment.tar","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 33 - Going Postal.tar","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 06 - Wyrd Sisters.tar","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Book 21 - Jingo.tar","Strata",".","Book 30 - The Wee Free Men","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 18 - Maskerade.tar","The Carpet People.tar","Bromeliad Trilogy 02 Diggers.tar","Book 14 - Lords and Ladies.tar","Book 35 - Wintersmith.tar","Bromeliad Trilogy 01 Truckers.tar","Book 31 - Monstrous Regiment.tar","Book 01 - The Colour of Magic.tar","Book 09 - Eric.tar","Book 33 - Going Postal.tar","Book 32 - A Hat Full of Sky.tar","Book 06 - Wyrd Sisters.tar","Book 21 - Jingo.tar","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.002561s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000061s
+[36mGET[0m /files/tpaudio/Book%2017%20-%20Interesting%20Times.tar
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000494s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","The Carpet People.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","Bromeliad Trilogy 02 Diggers.tar","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Bromeliad Trilogy 01 Truckers","Book 35 - Wintersmith.tar","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 25 - The Truth","..","Book 31 - Monstrous Regiment.tar","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 33 - Going Postal.tar","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 29 - Night Watch.tar","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 05 - Sourcery.tar","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 06 - Wyrd Sisters.tar","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Book 21 - Jingo.tar","Strata",".","Book 30 - The Wee Free Men","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 18 - Maskerade.tar","The Carpet People.tar","Bromeliad Trilogy 02 Diggers.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Book 35 - Wintersmith.tar","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 31 - Monstrous Regiment.tar","Book 01 - The Colour of Magic.tar","Book 09 - Eric.tar","Book 33 - Going Postal.tar","Book 29 - Night Watch.tar","Book 32 - A Hat Full of Sky.tar","Book 05 - Sourcery.tar","Book 06 - Wyrd Sisters.tar","Book 21 - Jingo.tar","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.070454s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000055s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","The Carpet People.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","Bromeliad Trilogy 02 Diggers.tar","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 11 - Reaper Man.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Bromeliad Trilogy 01 Truckers","Book 35 - Wintersmith.tar","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 25 - The Truth","..","Book 31 - Monstrous Regiment.tar","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 33 - Going Postal.tar","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 29 - Night Watch.tar","Book 08 - Guards Guards","Book 36 - Making Money.tar","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 05 - Sourcery.tar","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 06 - Wyrd Sisters.tar","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Book 21 - Jingo.tar","Strata",".","Book 30 - The Wee Free Men","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 18 - Maskerade.tar","The Carpet People.tar","Bromeliad Trilogy 02 Diggers.tar","Book 11 - Reaper Man.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Book 35 - Wintersmith.tar","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 31 - Monstrous Regiment.tar","Book 01 - The Colour of Magic.tar","Book 09 - Eric.tar","Book 33 - Going Postal.tar","Book 29 - Night Watch.tar","Book 36 - Making Money.tar","Book 32 - A Hat Full of Sky.tar","Book 05 - Sourcery.tar","Book 06 - Wyrd Sisters.tar","Book 21 - Jingo.tar","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.020171s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000059s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","The Carpet People.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","Bromeliad Trilogy 02 Diggers.tar","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 11 - Reaper Man.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Bromeliad Trilogy 01 Truckers","Book 35 - Wintersmith.tar","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 25 - The Truth","..","Book 31 - Monstrous Regiment.tar","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 33 - Going Postal.tar","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 29 - Night Watch.tar","Book 08 - Guards Guards","Book 36 - Making Money.tar","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 05 - Sourcery.tar","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 06 - Wyrd Sisters.tar","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Book 21 - Jingo.tar","Strata",".","Book 30 - The Wee Free Men","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 18 - Maskerade.tar","The Carpet People.tar","Bromeliad Trilogy 02 Diggers.tar","Book 11 - Reaper Man.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Book 35 - Wintersmith.tar","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 31 - Monstrous Regiment.tar","Book 01 - The Colour of Magic.tar","Book 09 - Eric.tar","Book 33 - Going Postal.tar","Book 29 - Night Watch.tar","Book 36 - Making Money.tar","Book 32 - A Hat Full of Sky.tar","Book 05 - Sourcery.tar","Book 06 - Wyrd Sisters.tar","Book 21 - Jingo.tar","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.00311s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000059s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","The Carpet People.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","Bromeliad Trilogy 02 Diggers.tar","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 11 - Reaper Man.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Bromeliad Trilogy 01 Truckers","Book 35 - Wintersmith.tar","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 25 - The Truth","..","Book 31 - Monstrous Regiment.tar","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 33 - Going Postal.tar","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 29 - Night Watch.tar","Book 08 - Guards Guards","Book 36 - Making Money.tar","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 05 - Sourcery.tar","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 06 - Wyrd Sisters.tar","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Book 21 - Jingo.tar","Strata",".","Book 30 - The Wee Free Men","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 18 - Maskerade.tar","The Carpet People.tar","Bromeliad Trilogy 02 Diggers.tar","Book 11 - Reaper Man.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Book 35 - Wintersmith.tar","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 31 - Monstrous Regiment.tar","Book 01 - The Colour of Magic.tar","Book 09 - Eric.tar","Book 33 - Going Postal.tar","Book 29 - Night Watch.tar","Book 36 - Making Money.tar","Book 32 - A Hat Full of Sky.tar","Book 05 - Sourcery.tar","Book 06 - Wyrd Sisters.tar","Book 21 - Jingo.tar","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.079368s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000057s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","The Carpet People.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 16 - Soul Music.tar","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","Bromeliad Trilogy 02 Diggers.tar","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 11 - Reaper Man.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Bromeliad Trilogy 01 Truckers","Book 35 - Wintersmith.tar","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 25 - The Truth","..","Book 31 - Monstrous Regiment.tar","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 33 - Going Postal.tar","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 29 - Night Watch.tar","Book 08 - Guards Guards","Book 36 - Making Money.tar","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 05 - Sourcery.tar","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 06 - Wyrd Sisters.tar","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Book 21 - Jingo.tar","Strata",".","Book 30 - The Wee Free Men","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 18 - Maskerade.tar","The Carpet People.tar","Book 16 - Soul Music.tar","Bromeliad Trilogy 02 Diggers.tar","Book 11 - Reaper Man.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Book 35 - Wintersmith.tar","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 31 - Monstrous Regiment.tar","Book 01 - The Colour of Magic.tar","Book 09 - Eric.tar","Book 33 - Going Postal.tar","Book 29 - Night Watch.tar","Book 36 - Making Money.tar","Book 32 - A Hat Full of Sky.tar","Book 05 - Sourcery.tar","Book 06 - Wyrd Sisters.tar","Book 21 - Jingo.tar","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.002995s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000058s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","The Carpet People.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 16 - Soul Music.tar","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","Bromeliad Trilogy 02 Diggers.tar","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 11 - Reaper Man.tar","Book 24 - The Fifth Elephant.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Good Omens.tar","Bromeliad Trilogy 01 Truckers","Book 35 - Wintersmith.tar","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 25 - The Truth","..","Book 31 - Monstrous Regiment.tar","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 13 - Small Gods.tar","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 33 - Going Postal.tar","Book 04 - Mort.tar","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 29 - Night Watch.tar","Book 08 - Guards Guards","Book 36 - Making Money.tar","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 05 - Sourcery.tar","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 06 - Wyrd Sisters.tar","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Book 21 - Jingo.tar","Strata",".","Book 30 - The Wee Free Men","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 18 - Maskerade.tar","The Carpet People.tar","Book 16 - Soul Music.tar","Bromeliad Trilogy 02 Diggers.tar","Book 11 - Reaper Man.tar","Book 24 - The Fifth Elephant.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Good Omens.tar","Book 35 - Wintersmith.tar","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 31 - Monstrous Regiment.tar","Book 13 - Small Gods.tar","Book 01 - The Colour of Magic.tar","Book 09 - Eric.tar","Book 33 - Going Postal.tar","Book 04 - Mort.tar","Book 29 - Night Watch.tar","Book 36 - Making Money.tar","Book 32 - A Hat Full of Sky.tar","Book 05 - Sourcery.tar","Book 06 - Wyrd Sisters.tar","Book 21 - Jingo.tar","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.525022s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000058s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","The Carpet People.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 16 - Soul Music.tar","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","Bromeliad Trilogy 02 Diggers.tar","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 11 - Reaper Man.tar","Book 24 - The Fifth Elephant.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Good Omens.tar","Bromeliad Trilogy 01 Truckers","Book 35 - Wintersmith.tar","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 25 - The Truth","..","Book 31 - Monstrous Regiment.tar","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 13 - Small Gods.tar","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 33 - Going Postal.tar","Book 04 - Mort.tar","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 29 - Night Watch.tar","Book 08 - Guards Guards","Book 36 - Making Money.tar","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 05 - Sourcery.tar","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 06 - Wyrd Sisters.tar","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Book 21 - Jingo.tar","Strata",".","Book 30 - The Wee Free Men","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 18 - Maskerade.tar","The Carpet People.tar","Book 16 - Soul Music.tar","Bromeliad Trilogy 02 Diggers.tar","Book 11 - Reaper Man.tar","Book 24 - The Fifth Elephant.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Good Omens.tar","Book 35 - Wintersmith.tar","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 31 - Monstrous Regiment.tar","Book 13 - Small Gods.tar","Book 01 - The Colour of Magic.tar","Book 09 - Eric.tar","Book 33 - Going Postal.tar","Book 04 - Mort.tar","Book 29 - Night Watch.tar","Book 36 - Making Money.tar","Book 32 - A Hat Full of Sky.tar","Book 05 - Sourcery.tar","Book 06 - Wyrd Sisters.tar","Book 21 - Jingo.tar","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.00352s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000057s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","The Carpet People.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 16 - Soul Music.tar","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","Bromeliad Trilogy 02 Diggers.tar","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 11 - Reaper Man.tar","Book 24 - The Fifth Elephant.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Good Omens.tar","Bromeliad Trilogy 01 Truckers","Book 35 - Wintersmith.tar","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 25 - The Truth","..","Book 31 - Monstrous Regiment.tar","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 13 - Small Gods.tar","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 33 - Going Postal.tar","Book 04 - Mort.tar","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 29 - Night Watch.tar","Book 08 - Guards Guards","Book 36 - Making Money.tar","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 05 - Sourcery.tar","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 06 - Wyrd Sisters.tar","Book 12 - Witches Abroad","Book 15 - Men at Arms.tar","Book 23 - Carpe Jugulum","Book 21 - Jingo.tar","Strata",".","Book 30 - The Wee Free Men","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 18 - Maskerade.tar","The Carpet People.tar","Book 16 - Soul Music.tar","Bromeliad Trilogy 02 Diggers.tar","Book 11 - Reaper Man.tar","Book 24 - The Fifth Elephant.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Good Omens.tar","Book 35 - Wintersmith.tar","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 31 - Monstrous Regiment.tar","Book 13 - Small Gods.tar","Book 01 - The Colour of Magic.tar","Book 09 - Eric.tar","Book 33 - Going Postal.tar","Book 04 - Mort.tar","Book 29 - Night Watch.tar","Book 36 - Making Money.tar","Book 32 - A Hat Full of Sky.tar","Book 05 - Sourcery.tar","Book 06 - Wyrd Sisters.tar","Book 15 - Men at Arms.tar","Book 21 - Jingo.tar","Book 34 - Thud.tar","Book 17 - Interesting Times.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.004228s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000058s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000085s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","Book 27 - The Last Hero.tar","The Carpet People.tar","Book 26 - Thief of Time.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 16 - Soul Music.tar","Book 14 - Lords and Ladies","Book 28 - Amazing Maurice.tar","Bromeliad Trilogy 02 Diggers","Book 23 - Carpe Jugulum.tar","Book 34 - Thud","Book 21 - Jingo","Bromeliad Trilogy 02 Diggers.tar","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 10 - Moving Pictures.tar","Book 11 - Reaper Man.tar","Book 24 - The Fifth Elephant.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Good Omens.tar","Bromeliad Trilogy 01 Truckers","Book 35 - Wintersmith.tar","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 25 - The Truth","Book 22 - The Last Continent.tar","..","Book 31 - Monstrous Regiment.tar","Book 05 - Sourcery","Book 19 - Feet Of Clay.tar","Bromeliad Trilogy 03 Wings","Strata.tar","Book 11 - Reaper Man","Book 36 - Making Money","Book 13 - Small Gods.tar","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 02 - Light Fantastic.tar","Book 20 - Hogfather.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 12 - Witches Abroad.tar","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 33 - Going Postal.tar","Book 04 - Mort.tar","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 29 - Night Watch.tar","Book 08 - Guards Guards","Book 36 - Making Money.tar","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 07 - Pyramids.tar","Book 05 - Sourcery.tar","Book 22 - The Last Continent","Book 03 - Equal Rites.tar","Book 28 - Amazing Maurice","Book 06 - Wyrd Sisters.tar","Book 12 - Witches Abroad","Book 15 - Men at Arms.tar","Book 23 - Carpe Jugulum","Book 21 - Jingo.tar","Strata",".","Book 30 - The Wee Free Men","Book 34 - Thud.tar","Book 17 - Interesting Times.tar","Book 08 - Guards Guards.tar"]
+["Book 18 - Maskerade.tar","Book 27 - The Last Hero.tar","The Carpet People.tar","Book 26 - Thief of Time.tar","Book 16 - Soul Music.tar","Book 28 - Amazing Maurice.tar","Book 23 - Carpe Jugulum.tar","Bromeliad Trilogy 02 Diggers.tar","Book 10 - Moving Pictures.tar","Book 11 - Reaper Man.tar","Book 24 - The Fifth Elephant.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Good Omens.tar","Book 35 - Wintersmith.tar","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 22 - The Last Continent.tar","Book 31 - Monstrous Regiment.tar","Book 19 - Feet Of Clay.tar","Strata.tar","Book 13 - Small Gods.tar","Book 01 - The Colour of Magic.tar","Book 02 - Light Fantastic.tar","Book 20 - Hogfather.tar","Book 12 - Witches Abroad.tar","Book 09 - Eric.tar","Book 33 - Going Postal.tar","Book 04 - Mort.tar","Book 29 - Night Watch.tar","Book 36 - Making Money.tar","Book 32 - A Hat Full of Sky.tar","Book 07 - Pyramids.tar","Book 05 - Sourcery.tar","Book 03 - Equal Rites.tar","Book 06 - Wyrd Sisters.tar","Book 15 - Men at Arms.tar","Book 21 - Jingo.tar","Book 34 - Thud.tar","Book 17 - Interesting Times.tar","Book 08 - Guards Guards.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.02486s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000057s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","Book 27 - The Last Hero.tar","The Carpet People.tar","Book 26 - Thief of Time.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 30 - The Wee Free Men.tar","Book 18 - Maskerade","Book 09 - Eric","Book 16 - Soul Music.tar","Book 14 - Lords and Ladies","Book 28 - Amazing Maurice.tar","Bromeliad Trilogy 02 Diggers","Book 23 - Carpe Jugulum.tar","Book 34 - Thud","Book 21 - Jingo","Bromeliad Trilogy 02 Diggers.tar","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 10 - Moving Pictures.tar","Book 11 - Reaper Man.tar","Book 24 - The Fifth Elephant.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Good Omens.tar","Bromeliad Trilogy 01 Truckers","Book 35 - Wintersmith.tar","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 25 - The Truth","Book 22 - The Last Continent.tar","..","Book 31 - Monstrous Regiment.tar","Book 05 - Sourcery","Book 19 - Feet Of Clay.tar","Bromeliad Trilogy 03 Wings","Strata.tar","Book 11 - Reaper Man","Book 36 - Making Money","Book 13 - Small Gods.tar","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 02 - Light Fantastic.tar","Book 20 - Hogfather.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 12 - Witches Abroad.tar","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 33 - Going Postal.tar","Book 04 - Mort.tar","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 29 - Night Watch.tar","Book 08 - Guards Guards","Book 36 - Making Money.tar","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 07 - Pyramids.tar","Book 05 - Sourcery.tar","Book 22 - The Last Continent","Book 03 - Equal Rites.tar","Book 28 - Amazing Maurice","Book 06 - Wyrd Sisters.tar","Book 12 - Witches Abroad","Book 15 - Men at Arms.tar","Book 23 - Carpe Jugulum","Book 21 - Jingo.tar","Strata",".","Book 30 - The Wee Free Men","Book 34 - Thud.tar","Book 17 - Interesting Times.tar","Book 08 - Guards Guards.tar"]
+["Book 18 - Maskerade.tar","Book 27 - The Last Hero.tar","The Carpet People.tar","Book 26 - Thief of Time.tar","Book 30 - The Wee Free Men.tar","Book 16 - Soul Music.tar","Book 28 - Amazing Maurice.tar","Book 23 - Carpe Jugulum.tar","Bromeliad Trilogy 02 Diggers.tar","Book 10 - Moving Pictures.tar","Book 11 - Reaper Man.tar","Book 24 - The Fifth Elephant.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Good Omens.tar","Book 35 - Wintersmith.tar","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 22 - The Last Continent.tar","Book 31 - Monstrous Regiment.tar","Book 19 - Feet Of Clay.tar","Strata.tar","Book 13 - Small Gods.tar","Book 01 - The Colour of Magic.tar","Book 02 - Light Fantastic.tar","Book 20 - Hogfather.tar","Book 12 - Witches Abroad.tar","Book 09 - Eric.tar","Book 33 - Going Postal.tar","Book 04 - Mort.tar","Book 29 - Night Watch.tar","Book 36 - Making Money.tar","Book 32 - A Hat Full of Sky.tar","Book 07 - Pyramids.tar","Book 05 - Sourcery.tar","Book 03 - Equal Rites.tar","Book 06 - Wyrd Sisters.tar","Book 15 - Men at Arms.tar","Book 21 - Jingo.tar","Book 34 - Thud.tar","Book 17 - Interesting Times.tar","Book 08 - Guards Guards.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.018184s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000079s
+"opening directory: tpaudio/Bromeliad Trilogy 01 Truckers/"
+"tpaudio/Bromeliad Trilogy 01 Truckers/"
+"served_files/tpaudio/Bromeliad Trilogy 01 Truckers/"
+["01Truckers.mp3","03Truckers.mp3","00Truckers.jpg","..","04Truckers.mp3","02Truckers.mp3","."]
+["01Truckers.mp3","03Truckers.mp3","00Truckers.jpg","04Truckers.mp3","02Truckers.mp3"]
+["..","."]
+[36mGET[0m /files/tpaudio/Bromeliad%20Trilogy%2001%20Truckers/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.027034s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000079s
+[36mGET[0m /files/tpaudio/Bromeliad%20Trilogy%2001%20Truckers/01Truckers.mp3
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000381s
+[36mGET[0m /files/tpaudio/Bromeliad%20Trilogy%2001%20Truckers/01Truckers.mp3
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000492s
+"opening directory: tpaudio/Book 14 - Lords and Ladies/"
+"tpaudio/Book 14 - Lords and Ladies/"
+"served_files/tpaudio/Book 14 - Lords and Ladies/"
+["07Lords03.mp3","03Lords06.mp3","06Lords08.mp3","05Lords04.mp3","06Lords06.mp3","07Lords08.mp3","08Lords13.mp3","02Lords02.mp3","06Lords04.mp3","05Lords10.mp3","06Lords07.mp3","08Lords04.mp3","05Lords03.mp3","06Lords02.mp3","03Lords05.mp3","03Lords10.mp3","02Lords12.mp3","02Lords06.mp3","01Lords14.mp3","04Lords09.mp3","01Lords09.mp3","05Lords02.mp3","02Lords13.mp3","07Lords02.mp3","02Lords01.mp3","05Lords11.mp3","02Lords08.mp3","03Lords07.mp3","04Lords01.mp3","01Lords07.mp3","01Lords06.mp3","03Lords14.mp3","04Lords02.mp3","04Lords11.mp3","02Lords03.mp3","08Lords02.mp3","01Lords04.mp3","07Lords01.mp3","08Lords08.mp3","08Lords09.mp3","02Lords07.mp3","..","01Lords03.mp3","01Lords12.mp3","04Lords14.mp3","07Lords10.mp3","07Lords14.mp3","00LordsandLadies.jpg","01Lords11.mp3","07Lords11.mp3","08Lords05.mp3","03Lords11.mp3","04Lords13.mp3","02Lords10.mp3","05Lords08.mp3","03Lords13.mp3","06Lords09.mp3","06Lords12.mp3","08Lords06.mp3","04Lords05.mp3","06Lords01.mp3","03Lords04.mp3","01Lords08.mp3","06Lords03.mp3","07Lords07.mp3","05Lords09.mp3","01Lords05.mp3","05Lords12.mp3","03Lords12.mp3","04Lords12.mp3","04Lords08.mp3","07Lords12.mp3","03Lords08.mp3","05Lords05.mp3","07Lords09.mp3","04Lords06.mp3","08Lords11.mp3","08Lords10.mp3","01Lords02.mp3","05Lords01.mp3","07Lords13.mp3","03Lords01.mp3","04Lords03.mp3","08Lords14.mp3","02Lords11.mp3","07Lords06.mp3","01Lords10.mp3","06Lords14.mp3","06Lords05.mp3","08Lords03.mp3","05Lords14.mp3","02Lords14.mp3","07Lords04.mp3","05Lords06.mp3","04Lords04.mp3","04Lords07.mp3","08Lords01.mp3","08Lords12.mp3","08Lords07.mp3","01Lords01.mp3","03Lords03.mp3","05Lords13.mp3","06Lords10.mp3","02Lords09.mp3","04Lords10.mp3","02Lords04.mp3","02Lords05.mp3","03Lords09.mp3","06Lords13.mp3","01Lords13.mp3","05Lords07.mp3","03Lords02.mp3",".","07Lords05.mp3","06Lords11.mp3"]
+["07Lords03.mp3","03Lords06.mp3","06Lords08.mp3","05Lords04.mp3","06Lords06.mp3","07Lords08.mp3","08Lords13.mp3","02Lords02.mp3","06Lords04.mp3","05Lords10.mp3","06Lords07.mp3","08Lords04.mp3","05Lords03.mp3","06Lords02.mp3","03Lords05.mp3","03Lords10.mp3","02Lords12.mp3","02Lords06.mp3","01Lords14.mp3","04Lords09.mp3","01Lords09.mp3","05Lords02.mp3","02Lords13.mp3","07Lords02.mp3","02Lords01.mp3","05Lords11.mp3","02Lords08.mp3","03Lords07.mp3","04Lords01.mp3","01Lords07.mp3","01Lords06.mp3","03Lords14.mp3","04Lords02.mp3","04Lords11.mp3","02Lords03.mp3","08Lords02.mp3","01Lords04.mp3","07Lords01.mp3","08Lords08.mp3","08Lords09.mp3","02Lords07.mp3","01Lords03.mp3","01Lords12.mp3","04Lords14.mp3","07Lords10.mp3","07Lords14.mp3","00LordsandLadies.jpg","01Lords11.mp3","07Lords11.mp3","08Lords05.mp3","03Lords11.mp3","04Lords13.mp3","02Lords10.mp3","05Lords08.mp3","03Lords13.mp3","06Lords09.mp3","06Lords12.mp3","08Lords06.mp3","04Lords05.mp3","06Lords01.mp3","03Lords04.mp3","01Lords08.mp3","06Lords03.mp3","07Lords07.mp3","05Lords09.mp3","01Lords05.mp3","05Lords12.mp3","03Lords12.mp3","04Lords12.mp3","04Lords08.mp3","07Lords12.mp3","03Lords08.mp3","05Lords05.mp3","07Lords09.mp3","04Lords06.mp3","08Lords11.mp3","08Lords10.mp3","01Lords02.mp3","05Lords01.mp3","07Lords13.mp3","03Lords01.mp3","04Lords03.mp3","08Lords14.mp3","02Lords11.mp3","07Lords06.mp3","01Lords10.mp3","06Lords14.mp3","06Lords05.mp3","08Lords03.mp3","05Lords14.mp3","02Lords14.mp3","07Lords04.mp3","05Lords06.mp3","04Lords04.mp3","04Lords07.mp3","08Lords01.mp3","08Lords12.mp3","08Lords07.mp3","01Lords01.mp3","03Lords03.mp3","05Lords13.mp3","06Lords10.mp3","02Lords09.mp3","04Lords10.mp3","02Lords04.mp3","02Lords05.mp3","03Lords09.mp3","06Lords13.mp3","01Lords13.mp3","05Lords07.mp3","03Lords02.mp3","07Lords05.mp3","06Lords11.mp3"]
+["..","."]
+[36mGET[0m /files/tpaudio/Book%2014%20-%20Lords%20and%20Ladies/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.015976s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000076s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000059s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000063s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000059s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000104s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.030657s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m404 Not Found[0m 0.023697s
+"served_files/"
+["dbproj_backups","tpaudio","reddit_data","books","movies","school","music","tpaudio.tar.gz","..","text","words.ps","images","RC_2015-01.bz2","."]
+["tpaudio.tar.gz","words.ps","RC_2015-01.bz2"]
+["dbproj_backups","tpaudio","reddit_data","books","movies","school","music","..","text","images","."]
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.023616s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000079s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000076s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000062s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000225s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000079s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m404 Not Found[0m 0.0002s
+"served_files/"
+["dbproj_backups","tpaudio","reddit_data","books","movies","school","music","tpaudio.tar.gz","..","text","words.ps","images","RC_2015-01.bz2","."]
+["tpaudio.tar.gz","words.ps","RC_2015-01.bz2"]
+["dbproj_backups","tpaudio","reddit_data","books","movies","school","music","..","text","images","."]
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000921s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000078s
+"opening directory: reddit_data/"
+"reddit_data/"
+"served_files/reddit_data/"
+["2011","2008","README","2015","..","2012","2014","2010","2013","2009","2007","."]
+["README"]
+["2011","2008","2015","..","2012","2014","2010","2013","2009","2007","."]
+[36mGET[0m /files/reddit_data/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001028s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000078s
+"opening directory: reddit_data/"
+"reddit_data/"
+"served_files/reddit_data/"
+["2011","2008","README","2015","..","2012","2014","2010","2013","2009","2007","."]
+["README"]
+["2011","2008","2015","..","2012","2014","2010","2013","2009","2007","."]
+[36mGET[0m /files/reddit_data/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000948s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000079s
+"opening directory: reddit_data/2011/"
+"reddit_data/2011/"
+"served_files/reddit_data/2011/"
+["RC_2011-04.bz2","RC_2011-11.bz2","RC_2011-10.bz2","RC_2011-02.bz2","RC_2011-05.bz2","RC_2011-09.bz2","..","RC_2011-03.bz2","RC_2011-07.bz2","RC_2011-12.bz2","RC_2011-08.bz2",".","RC_2011-06.bz2","RC_2011-01.bz2"]
+["RC_2011-04.bz2","RC_2011-11.bz2","RC_2011-10.bz2","RC_2011-02.bz2","RC_2011-05.bz2","RC_2011-09.bz2","RC_2011-03.bz2","RC_2011-07.bz2","RC_2011-12.bz2","RC_2011-08.bz2","RC_2011-06.bz2","RC_2011-01.bz2"]
+["..","."]
+[36mGET[0m /files/reddit_data/2011/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.018967s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000077s
+"opening directory: reddit_data/"
+"reddit_data/"
+"served_files/reddit_data/"
+["2011","2008","README","2015","..","2012","2014","2010","2013","2009","2007","."]
+["README"]
+["2011","2008","2015","..","2012","2014","2010","2013","2009","2007","."]
+[36mGET[0m /files/reddit_data/
+[37m  Accept: [0m
+[37m  Status: [0m[32m200 OK[0m 0.000963s
+"opening directory: reddit_data/"
+"reddit_data/"
+"served_files/reddit_data/"
+["2011","2008","README","2015","..","2012","2014","2010","2013","2009","2007","."]
+["README"]
+["2011","2008","2015","..","2012","2014","2010","2013","2009","2007","."]
+[36mGET[0m /files/reddit_data/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000975s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000079s
+[36mGET[0m /files/RC_2015-01.bz2
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000278s
+"opening directory: books/"
+"books/"
+"served_files/books/"
+["..","happstack-book.epub","."]
+["happstack-book.epub"]
+["..","."]
+[36mGET[0m /files/books/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.009893s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000068s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000062s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000104s
+Setting phasers to stun... (port 4242) (ctrl-c to quit)
+[36mGET[0m /files/jeeves.pdf
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001529s
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000118s
+"served_files/"
+["dbproj_backups","tpaudio","reddit_data","books","movies","atlassian_git_cheatsheet.pdf","school","music","tpaudio.tar.gz","games.txt","rwv7Rst.png","..","text","hohmann transfer.png","TRS-80_Assembly_Language_Programming_1980_Radio_Shack (1).pdf","words.ps","images","jeeves.pdf","RC_2015-01.bz2","."]
+["atlassian_git_cheatsheet.pdf","tpaudio.tar.gz","games.txt","rwv7Rst.png","hohmann transfer.png","TRS-80_Assembly_Language_Programming_1980_Radio_Shack (1).pdf","words.ps","jeeves.pdf","RC_2015-01.bz2"]
+["dbproj_backups","tpaudio","reddit_data","books","movies","school","music","..","text","images","."]
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.003933s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000079s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000083s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m404 Not Found[0m 0.000226s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","Book 27 - The Last Hero.tar","The Carpet People.tar","Book 26 - Thief of Time.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 30 - The Wee Free Men.tar","Book 18 - Maskerade","Book 09 - Eric","Book 16 - Soul Music.tar","Book 14 - Lords and Ladies","Book 28 - Amazing Maurice.tar","Bromeliad Trilogy 02 Diggers","Book 23 - Carpe Jugulum.tar","Book 34 - Thud","Book 21 - Jingo","Bromeliad Trilogy 02 Diggers.tar","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 10 - Moving Pictures.tar","Book 11 - Reaper Man.tar","Book 24 - The Fifth Elephant.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Good Omens.tar","Bromeliad Trilogy 01 Truckers","Book 35 - Wintersmith.tar","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 25 - The Truth","Book 22 - The Last Continent.tar","..","Book 31 - Monstrous Regiment.tar","Book 05 - Sourcery","Book 19 - Feet Of Clay.tar","Bromeliad Trilogy 03 Wings","Strata.tar","Book 11 - Reaper Man","Book 36 - Making Money","Book 13 - Small Gods.tar","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 02 - Light Fantastic.tar","Book 20 - Hogfather.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 12 - Witches Abroad.tar","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 33 - Going Postal.tar","Book 04 - Mort.tar","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 29 - Night Watch.tar","Book 08 - Guards Guards","Book 36 - Making Money.tar","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 07 - Pyramids.tar","Book 05 - Sourcery.tar","Book 22 - The Last Continent","Book 03 - Equal Rites.tar","Book 28 - Amazing Maurice","Book 06 - Wyrd Sisters.tar","Book 12 - Witches Abroad","Book 15 - Men at Arms.tar","Book 23 - Carpe Jugulum","Book 21 - Jingo.tar","Strata",".","Book 30 - The Wee Free Men","Book 34 - Thud.tar","Book 17 - Interesting Times.tar","Book 08 - Guards Guards.tar"]
+["Book 18 - Maskerade.tar","Book 27 - The Last Hero.tar","The Carpet People.tar","Book 26 - Thief of Time.tar","Book 30 - The Wee Free Men.tar","Book 16 - Soul Music.tar","Book 28 - Amazing Maurice.tar","Book 23 - Carpe Jugulum.tar","Bromeliad Trilogy 02 Diggers.tar","Book 10 - Moving Pictures.tar","Book 11 - Reaper Man.tar","Book 24 - The Fifth Elephant.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Good Omens.tar","Book 35 - Wintersmith.tar","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 22 - The Last Continent.tar","Book 31 - Monstrous Regiment.tar","Book 19 - Feet Of Clay.tar","Strata.tar","Book 13 - Small Gods.tar","Book 01 - The Colour of Magic.tar","Book 02 - Light Fantastic.tar","Book 20 - Hogfather.tar","Book 12 - Witches Abroad.tar","Book 09 - Eric.tar","Book 33 - Going Postal.tar","Book 04 - Mort.tar","Book 29 - Night Watch.tar","Book 36 - Making Money.tar","Book 32 - A Hat Full of Sky.tar","Book 07 - Pyramids.tar","Book 05 - Sourcery.tar","Book 03 - Equal Rites.tar","Book 06 - Wyrd Sisters.tar","Book 15 - Men at Arms.tar","Book 21 - Jingo.tar","Book 34 - Thud.tar","Book 17 - Interesting Times.tar","Book 08 - Guards Guards.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.005991s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000077s
+[36mGET[0m /files/tpaudio/Book%2009%20-%20Eric.tar
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000345s
+[36mGET[0m /files/tpaudio/Book%2009%20-%20Eric.tar
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000313s
+[36mGET[0m /files/tpaudio/Book%2009%20-%20Eric.tar
+[37m  Accept: [0m
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000101s
+[36mGET[0m /files/tpaudio/Book%2009%20-%20Eric.tar
+[37m  Accept: [0m
+[37m  Status: [0m[32m200 OK[0m 0.000314s
+[36mGET[0m /files/tpaudio/Book%2009%20-%20Eric.tar
+[37m  Accept: [0m
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000102s
+[36mGET[0m /files/tpaudio/Book%2009%20-%20Eric.tar
+[37m  Accept: [0m
+[37m  Status: [0m[32m200 OK[0m 0.00032s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000079s
+[36mGET[0m /
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000106s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000109s
+[36mGET[0m /favicon.ico
+[37m  Accept: [0m*/*
+[37m  Status: [0m[31m404 Not Found[0m 0.000202s
+"served_files/"
+["dbproj_backups","tpaudio","reddit_data","books","movies","atlassian_git_cheatsheet.pdf","school","music","tpaudio.tar.gz","games.txt","rwv7Rst.png","..","text","hohmann transfer.png","TRS-80_Assembly_Language_Programming_1980_Radio_Shack (1).pdf","words.ps","images","jeeves.pdf","RC_2015-01.bz2","."]
+["atlaSetting phasers to stun... (port 4242) (ctrl-c to quit)
+"opening directory: movies/archer_vice/"
+"movies/archer_vice/"
+"served_files/movies/archer_vice/"
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","..","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4",".","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["05.10 - Palace Intrigue Part 1.mp4","05.13 - Arrival Departure.mp4.mkv","05.12 - Filibuster.mp4","05.12 - Filibuster.mp4.mkv","05.09 - On the Carpet.mp4.mkv","05.04-House-Call.mkv","05.06 - Baby Shower.mp4","05.11 - Palace Intrigue Part 2.mp4","05.08 - The Rules of Extraction.mp4","05.11 - Palace Intrigue Part 2.mp4.mkv","05.09 - On the Carpet.mp4","05.04 - House Call.mp4","05.10 - Palace Intrigue Part 1.mp4.mkv","05.06 - Baby Shower.mp4.mkv","05.13 - Arrival Departure.mp4","05.07 - Smugglers Blues.mp4","05.07 - Smugglers Blues.mp4.mkv","05.08 - The Rules of Extraction.mp4.mkv","05.04 - House Call.mp4.mkv"]
+["..","."]
+[36mGET[0m /files/movies/archer_vice/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.006237s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000078s
+[36mGET[0m /files/movies/afile
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000488s
+[36mGET[0m /files/movies/Utopia.1x01.HDTV.x264-FoV.mp4.mkv
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.000343s
+[36mGET[0m /files/movies/Utopia.1x01.HDTV.x264-FoV.mp4.mkv
+[37m  Accept: [0m*/*
+[37m  Status: [0m[32m200 OK[0m 0.000336s
+"opening directory: tpaudio/"
+"tpaudio/"
+"served_files/tpaudio/"
+["Book 18 - Maskerade.tar","Book 27 - The Last Hero.tar","The Carpet People.tar","Book 26 - Thief of Time.tar","Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 30 - The Wee Free Men.tar","Book 18 - Maskerade","Book 09 - Eric","Book 16 - Soul Music.tar","Book 14 - Lords and Ladies","Book 28 - Amazing Maurice.tar","Bromeliad Trilogy 02 Diggers","Book 23 - Carpe Jugulum.tar","Book 34 - Thud","Book 21 - Jingo","Bromeliad Trilogy 02 Diggers.tar","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Book 10 - Moving Pictures.tar","Book 11 - Reaper Man.tar","Book 24 - The Fifth Elephant.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Good Omens.tar","Bromeliad Trilogy 01 Truckers","Book 35 - Wintersmith.tar","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 25 - The Truth","Book 22 - The Last Continent.tar","..","Book 31 - Monstrous Regiment.tar","Book 05 - Sourcery","Book 19 - Feet Of Clay.tar","Bromeliad Trilogy 03 Wings","Strata.tar","Book 11 - Reaper Man","Book 36 - Making Money","Book 13 - Small Gods.tar","Book 16 - Soul Music","Book 13 - Small Gods","Book 01 - The Colour of Magic.tar","Book 02 - Light Fantastic.tar","Book 20 - Hogfather.tar","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 12 - Witches Abroad.tar","Book 09 - Eric.tar","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 33 - Going Postal.tar","Book 04 - Mort.tar","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 29 - Night Watch.tar","Book 08 - Guards Guards","Book 36 - Making Money.tar","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 32 - A Hat Full of Sky.tar","Book 07 - Pyramids.tar","Book 05 - Sourcery.tar","Book 22 - The Last Continent","Book 03 - Equal Rites.tar","Book 28 - Amazing Maurice","Book 06 - Wyrd Sisters.tar","Book 12 - Witches Abroad","Book 15 - Men at Arms.tar","Book 23 - Carpe Jugulum","Book 21 - Jingo.tar","Strata",".","Book 30 - The Wee Free Men","Book 34 - Thud.tar","Book 17 - Interesting Times.tar","Book 08 - Guards Guards.tar"]
+["Book 18 - Maskerade.tar","Book 27 - The Last Hero.tar","The Carpet People.tar","Book 26 - Thief of Time.tar","Book 30 - The Wee Free Men.tar","Book 16 - Soul Music.tar","Book 28 - Amazing Maurice.tar","Book 23 - Carpe Jugulum.tar","Bromeliad Trilogy 02 Diggers.tar","Book 10 - Moving Pictures.tar","Book 11 - Reaper Man.tar","Book 24 - The Fifth Elephant.tar","Book 14 - Lords and Ladies.tar","Bromeliad Trilogy 03 Wings.tar","Good Omens.tar","Book 35 - Wintersmith.tar","Bromeliad Trilogy 01 Truckers.tar","Book 25 - The Truth.tar","Book 22 - The Last Continent.tar","Book 31 - Monstrous Regiment.tar","Book 19 - Feet Of Clay.tar","Strata.tar","Book 13 - Small Gods.tar","Book 01 - The Colour of Magic.tar","Book 02 - Light Fantastic.tar","Book 20 - Hogfather.tar","Book 12 - Witches Abroad.tar","Book 09 - Eric.tar","Book 33 - Going Postal.tar","Book 04 - Mort.tar","Book 29 - Night Watch.tar","Book 36 - Making Money.tar","Book 32 - A Hat Full of Sky.tar","Book 07 - Pyramids.tar","Book 05 - Sourcery.tar","Book 03 - Equal Rites.tar","Book 06 - Wyrd Sisters.tar","Book 15 - Men at Arms.tar","Book 21 - Jingo.tar","Book 34 - Thud.tar","Book 17 - Interesting Times.tar","Book 08 - Guards Guards.tar"]
+["Book 01 - The Colour of Magic","Book 32 - A Hat Full of Sky","Book 18 - Maskerade","Book 09 - Eric","Book 14 - Lords and Ladies","Bromeliad Trilogy 02 Diggers","Book 34 - Thud","Book 21 - Jingo","The Carpet People","Book 31 - Monstrous Regiment","Book 33 - Going Postal","Book 06 - Wyrd Sisters","Bromeliad Trilogy 01 Truckers","Book 17 - Interesting Times","Book 35 - Wintersmith","Book 29 - Night Watch","Book 25 - The Truth","..","Book 05 - Sourcery","Bromeliad Trilogy 03 Wings","Book 11 - Reaper Man","Book 36 - Making Money","Book 16 - Soul Music","Book 13 - Small Gods","Book 24 - The Fifth Elephant","Book 04 - Mort","Good Omens","Book 15 - Men at Arms","Book 26 - Thief of Time","Book 10 - Moving Pictures","Book 02 - Light Fantastic","Book 08 - Guards Guards","Book 20 - Hogfather","Book 07 - Pyramids","Book 03 - Equal Rites","Book 19 - Feet Of Clay","Book 27 - The Last Hero","Book 22 - The Last Continent","Book 28 - Amazing Maurice","Book 12 - Witches Abroad","Book 23 - Carpe Jugulum","Strata",".","Book 30 - The Wee Free Men"]
+[36mGET[0m /files/tpaudio/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.005909s
+[36mGET[0m /static/css/default.css
+[37m  Accept: [0mtext/css,*/*;q=0.1
+[37m  Status: [0m[32m200 OK[0m 0.000079s
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[31m401 Unauthorized[0m 0.000087s
+"served_files/"
+["dbproj_backups","tpaudio","reddit_data","books","movies","atlassian_git_cheatsheet.pdf","school","music","tpaudio.tar.gz","games.txt","rwv7Rst.png","..","text","hohmann transfer.png","TRS-80_Assembly_Language_Programming_1980_Radio_Shack (1).pdf","words.ps","images","jeeves.pdf","RC_2015-01.bz2","."]
+["atlassian_git_cheatsheet.pdf","tpaudio.tar.gz","games.txt","rwv7Rst.png","hohmann transfer.png","TRS-80_Assembly_Language_Programming_1980_Radio_Shack (1).pdf","words.ps","jeeves.pdf","RC_2015-01.bz2"]
+["dbproj_backups","tpaudio","reddit_data","books","movies","school","music","..","text","images","."]
+[36mGET[0m /files/
+[37m  Accept: [0mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[37m  Status: [0m[32m200 OK[0m 0.001151s

@@ -12,9 +12,11 @@ import           System.IO
 import           Data.ByteString.Char8                as B (elem, pack, unpack)
 import           Data.ByteString.Lazy.Char8           as BL (writeFile)
 
+import           Network.Wai.Middleware.AddHeaders    (addHeaders)
 import qualified Network.Wai.Middleware.HttpAuth      as Auth
 import           Network.Wai.Middleware.RequestLogger
 import           Network.Wai.Middleware.Static
+
 import           Text.Blaze.Html.Renderer.Text        (renderHtml)
 import           Web.Scotty                           as S
 
@@ -22,9 +24,11 @@ import           Pages
 
 -- for servedir
 import           Control.Monad
+import qualified Filesystem                           as F
 import           System.Directory                     (doesDirectoryExist,
                                                        doesFileExist,
                                                        getDirectoryContents)
+
 -- for upload handling
 import           Network.Wai.Parse                    as N (fileContent,
                                                             fileName)
@@ -36,6 +40,7 @@ main = do envPort <- getEnv "PORT"
           c <- hGetContents h
           let l = P.lines c
           scotty (read envPort) $ do
+            middleware $ addHeaders $ [(B.pack "X-Clacks-Overhead", B.pack "GNU Terry Pratchett")]
             middleware logStdoutDev
             middleware static
             when (P.length l == 2) $ do
@@ -48,7 +53,7 @@ main = do envPort <- getEnv "PORT"
 routes :: ScottyM ()
 routes = do S.get "/" $ blaze $ template "HOME" homePage
 
-            S.get "/testing" $ blaze $ videoPage $ "/files/movies/archer_vice/05.10%20-%20Palace%20Intrigue%20Part%201.mp4"
+            S.get "/testing" $ blaze $ videoPage "/files/movies/archer_vice/05.10%20-%20Palace%20Intrigue%20Part%201.mp4"
 
             S.get (regex "^/files/$") $ serveDir ""  -- directory names must end in '/'
 
@@ -69,7 +74,6 @@ routes = do S.get "/" $ blaze $ template "HOME" homePage
                                     liftIO $ handleFiles fs
                                     html $ T.pack $ show fs
 
-
             S.notFound $ html "not here"
 
 blaze = S.html . renderHtml
@@ -77,6 +81,7 @@ blaze = S.html . renderHtml
 file' :: String -> ActionM ()
 file' f = file $ prefix <> f
 
+-- TODO: new type for files, incl attrs. use System.File
 dirInfo :: String -> IO ([String], [String])
 dirInfo p = do let path = prefix ++ p
                entries <- liftIO $ getDirectoryContents path
