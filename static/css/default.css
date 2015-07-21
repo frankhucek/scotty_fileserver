@@ -14,3 +14,10 @@ footer {
     height: 5%;
     width: 50%;
 }
+td {
+    padding: 0px 10px 0px 10px;
+}
+
+table {
+    width: 75%
+}

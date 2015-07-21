@@ -2,6 +2,8 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 
 module Main where
+import           Types
+
 import           Control.Monad.IO.Class               (liftIO)
 import           Data.Monoid                          ((<>))
 import qualified Data.Text.Lazy                       as T
@@ -24,10 +26,13 @@ import           Pages
 
 -- for servedir
 import           Control.Monad
-import qualified Filesystem                           as F
+import           Data.Time.Clock.POSIX                (posixSecondsToUTCTime)
+import           Data.Time.Format                     (formatTime)
 import           System.Directory                     (doesDirectoryExist,
                                                        doesFileExist,
                                                        getDirectoryContents)
+import           System.Locale                        (defaultTimeLocale)
+import qualified System.Posix.Files                   as F
 
 -- for upload handling
 import           Network.Wai.Parse                    as N (fileContent,
@@ -81,20 +86,38 @@ blaze = S.html . renderHtml
 file' :: String -> ActionM ()
 file' f = file $ prefix <> f
 
--- TODO: new type for files, incl attrs. use System.File
-dirInfo :: String -> IO ([String], [String])
+dirInfo :: String -> IO ([FileEntry], [FileEntry])
 dirInfo p = do let path = prefix ++ p
                entries <- liftIO $ getDirectoryContents path
                fs <- liftIO $ filterM (doesFileExist . (path ++)) entries
                ds <- liftIO $ filterM (doesDirectoryExist . ( path ++)) entries
-               liftIO $ print path >> print entries >> print fs >> print ds -- debugging
-               return (fs, ds)
+
+               fattrs <- mapM (F.getFileStatus . (path ++)) fs
+               dattrs <- mapM (F.getFileStatus . (path ++)) ds
+
+               let fs' = zip3 fs (map (strTime . F.modificationTimeHiRes) fattrs) (map (showSize . fromIntegral) $ map F.fileSize fattrs)
+                   ds' = zip3 ds (map (strTime . F.modificationTimeHiRes) dattrs) (map (showSize . fromIntegral) $ map F.fileSize dattrs)
+
+               liftIO $ print path >> print entries >> print fs' >> print ds' -- debugging
+               return (fs', ds')
+
+  where strTime ptime = formatTime defaultTimeLocale "%F - %T" (posixSecondsToUTCTime ptime)
+        showSize :: Int -> String
+        showSize n
+          | n < 1000    = (show n)                 ++ " bytes"
+          | n < 1000000 = (show (n `div` 1000))    ++ " kb"
+          | otherwise   = (show (n `div` 1000000)) ++ " mb"
+
+          --bytes
+
+
+
 
 serveDir p = do (fs, ds) <- liftIO $ dirInfo p
                 blaze $ template p $ renderDir p fs ds
 
 prefix :: String
-prefix = "served_files/" -- "/home/miles/haskell/scotty/fileserver/static/"
+prefix = "served_files/"
 
 -- type File = (Text, FileInfo ByteString) -- (field where came from, info)
 -- FileInfo { fileName :: ByteString, fileContentType :: ByteString, fileContent :: c }
