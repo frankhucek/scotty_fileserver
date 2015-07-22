@@ -38,19 +38,15 @@ renderDir dir fs ds =
 
       frows = foldl (>>) mempty $ fmap
               (\f -> tr $ do
-                  td (a ! href (toValue $ mconcat ["/files/", dir, fst' f]) $ toHtml $ fst' f)
-                  td $ toHtml $ snd' f
-                  td $ toHtml $ trd' f) fs'
+                  td (a ! href (toValue $ mconcat ["/files/", dir, feName f]) $ toHtml $ feName f)
+                  td $ toHtml $ feLastModified f
+                  td $ toHtml $ feSize f) fs'
 
       drows = foldl (>>) mempty $ fmap
               (\d -> tr $ do
-                  td (a ! href (toValue $ mconcat ["/files/", dir, fst' d, "/"]) $ toHtml $ fst' d)
-                  td $ toHtml $ snd' d
-                  td $ toHtml $ trd' d) ds'
-
-      -- drows = foldl (>>) mempty $ fmap
-      --         (\d -> tr. td .
-      --                (a ! href (toValue $ mconcat ["/files/", dir, d, "/"])) $ toHtml d) ds'
+                  td (a ! href (toValue $ mconcat ["/files/", dir, feName d, "/"]) $ toHtml $ feName d)
+                  td $ toHtml $ feLastModified d
+                  td $ toHtml $ feSize d) ds'
 
   in html $ body $ table $ do
     tr $ do

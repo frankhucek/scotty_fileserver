@@ -5,6 +5,7 @@ module Main where
 import           Types
 
 import           Control.Monad.IO.Class               (liftIO)
+import           Data.Functor                         ((<$>))
 import           Data.Monoid                          ((<>))
 import qualified Data.Text.Lazy                       as T
 import           Prelude                              as P
@@ -104,11 +105,13 @@ dirInfo p = do let path = prefix ++ p
                fattrs <- mapM (F.getFileStatus . (path ++)) fs
                dattrs <- mapM (F.getFileStatus . (path ++)) ds
 
-               let fs' = zip3 fs (map (strTime . F.modificationTimeHiRes) fattrs) (map (showSize . fromIntegral) $ map F.fileSize fattrs)
-                   ds' = zip3 ds (map (strTime . F.modificationTimeHiRes) dattrs) (map (showSize . fromIntegral) $ map F.fileSize dattrs)
+               let fs'  = zip3 fs (map (strTime . F.modificationTimeHiRes) fattrs) (map (showSize . fromIntegral) $ map F.fileSize fattrs)
+                   ds'  = zip3 ds (map (strTime . F.modificationTimeHiRes) dattrs) (map (showSize . fromIntegral) $ map F.fileSize dattrs)
+                   fs'' = (\(a,b,c) -> FileEntry a b c) <$> fs'
+                   ds'' = (\(a,b,c) -> FileEntry a b c) <$> ds'
 
-               liftIO $ print path >> print entries >> print fs' >> print ds' -- debugging
-               return (fs', ds')
+               liftIO $ print path >> print entries >> print fs'' >> print ds'' -- debugging
+               return (fs'', ds'')
 
   where strTime ptime = formatTime defaultTimeLocale "%F - %T" (posixSecondsToUTCTime ptime)
         showSize :: Int -> String
