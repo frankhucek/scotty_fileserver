@@ -37,6 +37,8 @@ import qualified System.Posix.Files                   as F
 -- for upload handling
 import           Network.Wai.Parse                    as N (fileContent,
                                                             fileName)
+-- for donnerator
+import           System.Process
 
 -- look into 'files' in Web.Scoty for uploads
 
@@ -78,6 +80,13 @@ routes = do S.get "/" $ blaze $ template "HOME" homePage
             S.post "/uploaded" $ do fs <- files
                                     liftIO $ handleFiles fs
                                     html $ T.pack $ show fs
+
+
+            S.get "/donnerator" $ do dism <- liftIO $ getDonnered
+                                     blaze $ donnerPage dism
+
+            -- S.get "/donnerfile" $ blaze donnerFilePage
+
 
             S.notFound $ html "not here"
 
@@ -127,3 +136,9 @@ handleFiles fs = let fis = map snd fs
                  in void $ forM fis' $
                     \f ->
                      BL.writeFile (B.unpack (B.pack prefix  <> fileName f)) $ fileContent f
+
+
+getDonnered :: IO String
+getDonnered =  do (_, Just hout, _, _) <- createProcess (proc "./donnerate.sh" []) { std_out = CreatePipe, cwd = Just "/home/miles/ruby/donnerator" }
+                  c <- hGetContents hout
+                  return c

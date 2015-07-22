@@ -33,6 +33,8 @@ executable one
                      , unix
                      , time
                      , old-locale
+-- for donnerator
+                     , process
 
   ghc-options: -fwarn-unused-imports -O2
   -- hs-source-dirs:

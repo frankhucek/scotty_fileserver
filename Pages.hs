@@ -6,6 +6,8 @@ module Pages (template
              , uploadPage
              , homePage
              , videoPage
+             , donnerPage
+             -- , donnerFilePage
              ) where
 
 import           Types
@@ -86,7 +88,7 @@ theFooter = H.footer $ do
             toHtml ("      " :: String)
             a ! href "/upload" $ "file uploading"
             toHtml ("      " :: String)
-            a ! href "#" $ "Donnerisms"
+            a ! href "/donnerator" $ "Donnerisms"
             toHtml ("      " :: String)
             a ! href "#" $ "Donnerfile"
 
@@ -95,3 +97,12 @@ theFooter = H.footer $ do
 defaultIncludes :: Html
 defaultIncludes = do H.link ! A.href "/static/css/default.css" ! A.title "compact" ! A.rel "stylesheet" ! A.type_ "text/css"
                      script mempty ! src "/static/js/custom-drop-form.js"
+
+donnerPage :: String -> Html
+donnerPage ism = template "Donnerator Output" $ p $ toHtml ism
+
+-- donnerFilePage :: String -> Html
+-- donnerFilePage contents = template "Donnerfile" $ do
+--   h2 "the donner file"
+--   form ! A.method "POST" ! action "/donnerfileupdate" $ do
+--     input ! type_ "text" ! value (toValue contents) ! name "dtext"
