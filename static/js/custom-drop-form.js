@@ -1,9 +1,9 @@
-Dropzone.options.customDropzone = {
+Dropzone.options.customdropzone = {
     paramName: "file", // The name that will be used to transfer the file
     maxFilesize: 5000, // MB
     parallelUploads: 4,
     uploadMultiple: true,
-    addRemoveLinks: true,
+//    addRemoveLinks: true,
     dictDefaultMessage: "droppeth thy files",
     accept: function(file, done) {
         done(); // with no args, true, with args, error with msg

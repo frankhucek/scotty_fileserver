@@ -48,11 +48,11 @@ main = do envPort <- getEnv "PORT"
           c <- hGetContents h
           let l = P.lines c
           scotty (read envPort) $ do
-            middleware $ addHeaders $ [(B.pack "X-Clacks-Overhead", B.pack "GNU Terry Pratchett")]
+            middleware $ addHeaders [(B.pack "X-Clacks-Overhead", B.pack "GNU Terry Pratchett")]
             middleware logStdoutDev
             middleware static
             when (P.length l == 2) $ do
-              let usn = l !! 0
+              let usn = head l
                   passwd = l !! 1
               middleware $ Auth.basicAuth
                 (\u p -> return $ u == B.pack usn && p == B.pack passwd) " Welcome "
@@ -83,7 +83,7 @@ routes = do S.get "/" $ blaze $ template "HOME" homePage
                                     html $ T.pack $ show fs
 
 
-            S.get "/donnerator" $ do dism <- liftIO $ getDonnered
+            S.get "/donnerator" $ do dism <- liftIO getDonnered
                                      blaze $ donnerPage dism
 
             -- S.get "/donnerfile" $ blaze donnerFilePage
@@ -105,8 +105,8 @@ dirInfo p = do let path = prefix ++ p
                fattrs <- mapM (F.getFileStatus . (path ++)) fs
                dattrs <- mapM (F.getFileStatus . (path ++)) ds
 
-               let fs'  = zip3 fs (map (strTime . F.modificationTimeHiRes) fattrs) (map (showSize . fromIntegral) $ map F.fileSize fattrs)
-                   ds'  = zip3 ds (map (strTime . F.modificationTimeHiRes) dattrs) (map (showSize . fromIntegral) $ map F.fileSize dattrs)
+               let fs'  = zip3 fs (map (strTime . F.modificationTimeHiRes) fattrs) (map ((showSize . fromIntegral) . F.fileSize) fattrs)
+                   ds'  = zip3 ds (map (strTime . F.modificationTimeHiRes) dattrs) (map ((showSize . fromIntegral) . F.fileSize) dattrs)
                    fs'' = (\(a,b,c) -> FileEntry a b c) <$> fs'
                    ds'' = (\(a,b,c) -> FileEntry a b c) <$> ds'
 
@@ -116,9 +116,9 @@ dirInfo p = do let path = prefix ++ p
   where strTime ptime = formatTime defaultTimeLocale "%F - %T" (posixSecondsToUTCTime ptime)
         showSize :: Int -> String
         showSize n
-          | n < 1000    = (show n)                 ++ " bytes"
-          | n < 1000000 = (show (n `div` 1000))    ++ " kb"
-          | otherwise   = (show (n `div` 1000000)) ++ " mb"
+          | n < 1000    = show n                 ++ " bytes"
+          | n < 1000000 = show (n `div` 1000)    ++ " kb"
+          | otherwise   = show (n `div` 1000000) ++ " mb"
 
           --bytes
 
@@ -143,5 +143,4 @@ handleFiles fs = let fis = map snd fs
 
 getDonnered :: IO String
 getDonnered =  do (_, Just hout, _, _) <- createProcess (proc "./donnerate.sh" []) { std_out = CreatePipe, cwd = Just "/home/miles/ruby/donnerator" }
-                  c <- hGetContents hout
-                  return c
+                  hGetContents hout

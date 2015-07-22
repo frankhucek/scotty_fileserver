@@ -63,9 +63,8 @@ renderDir dir fs ds =
 
 uploadPage :: Html
 uploadPage = template "upload form" $ do
-  script mempty ! src "/static/js/dropzone.js"
   link  ! rel "stylesheet" ! href "/static/css/dropzone.css"
-  H.form mempty ! action "/uploaded" ! class_ "dropzone" ! A.id "customDropzone"
+  H.form mempty ! action "/uploaded" ! class_ "dropzone" ! A.id "customdropzone"
 
 
 
@@ -92,6 +91,7 @@ theFooter = H.footer $ do
 
 defaultIncludes :: Html
 defaultIncludes = do H.link ! A.href "/static/css/default.css" ! A.title "compact" ! A.rel "stylesheet" ! A.type_ "text/css"
+                     script mempty ! src "/static/js/dropzone.js"
                      script mempty ! src "/static/js/custom-drop-form.js"
 
 donnerPage :: String -> Html

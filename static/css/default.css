@@ -18,6 +18,10 @@ td {
     padding: 0px 10px 0px 10px;
 }
 
-table {
+table { /* upload page */
     width: 75%
+}
+
+#customdropzone {
+    width: 50%
 }
