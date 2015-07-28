@@ -84,6 +84,15 @@ routes = do S.get "/" $ blaze $ template "HOME" homePage
                                      blaze $ donnerPage dism
 
 
+            S.get "/donneradd" $ do blaze $ donnerAddPage
+
+            S.post "/donneradd" $ do (line :: String) <- param "donner_line"
+                                     liftIO $ do
+                                       appendFile "/home/miles/ruby/donnerator/donnerisms.txt" $ line ++ "\n"
+                                     redirect "/donnerfile"
+
+            S.get "/donnerfile" $ file "/home/miles/ruby/donnerator/donnerisms.txt"
+
             S.notFound $ html "not here"
 
 blaze = S.html . renderHtml
