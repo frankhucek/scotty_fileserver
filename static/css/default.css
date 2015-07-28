@@ -1,5 +1,5 @@
 html {
-    position: relative;
+        position: relative;
     min-height: 100%;
 }
 body {
@@ -24,4 +24,5 @@ table { /* upload page */
 
 #customdropzone {
     width: 50%
+}
 }

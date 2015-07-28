@@ -61,8 +61,6 @@ main = do envPort <- getEnv "PORT"
 routes :: ScottyM ()
 routes = do S.get "/" $ blaze $ template "HOME" homePage
 
-            S.get "/testing" $ blaze $ videoPage "/files/movies/archer_vice/05.10%20-%20Palace%20Intrigue%20Part%201.mp4"
-
             S.get (regex "^/files/$") $ serveDir ""  -- directory names must end in '/'
 
             S.get (regex "^/files/(.+/)$") $ do (fp :: String) <- param "1"
@@ -82,11 +80,8 @@ routes = do S.get "/" $ blaze $ template "HOME" homePage
                                     liftIO $ handleFiles fs
                                     html $ T.pack $ show fs
 
-
             S.get "/donnerator" $ do dism <- liftIO getDonnered
                                      blaze $ donnerPage dism
-
-            -- S.get "/donnerfile" $ blaze donnerFilePage
 
 
             S.notFound $ html "not here"
@@ -105,8 +100,8 @@ dirInfo p = do let path = prefix ++ p
                fattrs <- mapM (F.getFileStatus . (path ++)) fs
                dattrs <- mapM (F.getFileStatus . (path ++)) ds
 
-               let fs'  = zip3 fs (map (strTime . F.modificationTimeHiRes) fattrs) (map ((showSize . fromIntegral) . F.fileSize) fattrs)
-                   ds'  = zip3 ds (map (strTime . F.modificationTimeHiRes) dattrs) (map ((showSize . fromIntegral) . F.fileSize) dattrs)
+               let fs'  = zip3 fs (map (strTime . F.modificationTimeHiRes) fattrs) (map (showSize . fromIntegral . F.fileSize) fattrs)
+                   ds'  = zip3 ds (map (strTime . F.modificationTimeHiRes) dattrs) (map (showSize . fromIntegral . F.fileSize) dattrs)
                    fs'' = (\(a,b,c) -> FileEntry a b c) <$> fs'
                    ds'' = (\(a,b,c) -> FileEntry a b c) <$> ds'
 
@@ -119,11 +114,6 @@ dirInfo p = do let path = prefix ++ p
           | n < 1000    = show n                 ++ " bytes"
           | n < 1000000 = show (n `div` 1000)    ++ " kb"
           | otherwise   = show (n `div` 1000000) ++ " mb"
-
-          --bytes
-
-
-
 
 serveDir p = do (fs, ds) <- liftIO $ dirInfo p
                 blaze $ template p $ renderDir p fs ds
