@@ -5,7 +5,6 @@ module Pages (template
              , renderDir
              , uploadPage
              , homePage
-             , videoPage
              , donnerPage
              , donnerAddPage
              ) where
@@ -17,19 +16,15 @@ import qualified Text.Blaze.Html5            as H
 import           Text.Blaze.Html5.Attributes
 import qualified Text.Blaze.Html5.Attributes as A
 
-import qualified Data.Text.Lazy              as T
-
+import           Data.List                   (sort)
 import           Data.Monoid
-
-import           Data.List                   (sort, sortBy)
+import qualified Data.Text.Lazy              as T
 
 renderText :: T.Text -> Html
 renderText text = html $ body $ p $ toHtml text
 
-
 homePage :: Html
 homePage = renderText "home"
-
 
 renderDir :: String -> [FileEntry] -> [FileEntry] -> Html
 renderDir dir fs ds =
@@ -66,30 +61,19 @@ uploadPage = template "upload form" $ do
   link  ! rel "stylesheet" ! href "/static/css/dropzone.css"
   H.form mempty ! action "/uploaded" ! class_ "dropzone" ! A.id "customdropzone"
 
-
-
-videoPage :: String -> Html
-videoPage file = template file $
-  embed ! width "320" ! height "240" ! src (toValue file) ! type_ "video/mp4" ! A.style "visibility: visible"
-
 template :: String -> Html -> Html
 template title body = html $ do H.head $ do H.title (toHtml title)
                                             defaultIncludes
                                 H.body $ do body
                                             theFooter
+
 theFooter :: Html
 theFooter = H.footer $ do
-            a ! href "/files/"  $ "file serving"
-            toHtml ("      " :: String)
-            a ! href "/upload" $ "file uploading"
-            toHtml ("      " :: String)
+            a ! href "/files/"     $ "file serving"
+            a ! href "/upload"     $ "file uploading"
             a ! href "/donnerator" $ "donnerisms"
-            toHtml ("      " :: String)
             a ! href "/donnerfile" $ "donnerfile"
-            toHtml ("      " :: String)
-            a ! href "/donneradd" $ "add to donnerFile"
-
-
+            a ! href "/donneradd"  $ "add to donnerFile"
 
 defaultIncludes :: Html
 defaultIncludes = do H.link ! A.href "/static/css/default.css" ! A.title "compact" ! A.rel "stylesheet" ! A.type_ "text/css"
@@ -102,6 +86,9 @@ donnerPage ism = template "Donnerator Output" $ p $ toHtml ism
 donnerAddPage :: Html
 donnerAddPage = template "Add to Donnerfile" $ do
   p "add line to the donnerfile"
+  p "no punctuation EXCEPT A PERIOD AT THE END OF EVERY DONNERISM"
+  p "capitalization is irrelevant"
+  p "seriously, that period is important"
   H.form ! A.method "POST" ! action "/donneradd" $ do
     input ! type_ "text" ! name "donner_line" ! size "70"
     input ! type_ "submit" ! value "SUBMIT"

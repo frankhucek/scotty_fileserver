@@ -41,7 +41,9 @@ import           Network.Wai.Parse                    as N (fileContent,
 -- for donnerator
 import           System.Process
 
--- look into 'files' in Web.Scoty for uploads
+-- run with environment var PORT set to whatever port
+-- for auth, make a file "auth.txt"
+-- containing two lines: username and then password
 
 main = do envPort <- getEnv "PORT"
           h <- openFile "auth.txt" ReadMode
@@ -71,23 +73,22 @@ routes = do S.get "/" $ blaze $ template "HOME" homePage
             S.get (regex "^/files/(.*[^/])$") $ do (fp :: String) <- param "1"
                                                    file' fp
 
-            S.get "/files/:file" $ do fname <- param "file"
+            S.get "/files/:file" $ do fname <- param "file"  -- probably redundant
                                       file' fname
 
             S.get "/upload" $ blaze uploadPage
 
             S.post "/uploaded" $ do fs <- files
                                     liftIO $ handleFiles fs
-                                    html $ T.pack $ show fs
+                                    html $ T.pack $ show fs  -- does not get displayed when using dropzone
 
             S.get "/donnerator" $ do dism <- liftIO getDonnered
                                      blaze $ donnerPage dism
 
-
-            S.get "/donneradd" $ do blaze $ donnerAddPage
+            S.get "/donneradd" $ blaze donnerAddPage
 
             S.post "/donneradd" $ do (line :: String) <- param "donner_line"
-                                     liftIO $ do
+                                     liftIO $
                                        appendFile "/home/miles/ruby/donnerator/donnerisms.txt" $ line ++ "\n"
                                      redirect "/donnerfile"
 
@@ -102,9 +103,9 @@ file' f = file $ prefix <> f
 
 dirInfo :: String -> IO ([FileEntry], [FileEntry])
 dirInfo p = do let path = prefix ++ p
-               entries <- liftIO $ getDirectoryContents path
-               fs <- liftIO $ filterM (doesFileExist . (path ++)) entries
-               ds <- liftIO $ filterM (doesDirectoryExist . ( path ++)) entries
+               entries <- getDirectoryContents path
+               fs <- filterM (doesFileExist . (path ++)) entries
+               ds <- filterM (doesDirectoryExist . ( path ++)) entries
 
                fattrs <- mapM (F.getFileStatus . (path ++)) fs
                dattrs <- mapM (F.getFileStatus . (path ++)) ds
@@ -113,11 +114,12 @@ dirInfo p = do let path = prefix ++ p
                    ds'  = zip3 ds (map (strTime . F.modificationTimeHiRes) dattrs) (map (showSize . fromIntegral . F.fileSize) dattrs)
                    fs'' = (\(a,b,c) -> FileEntry a b c) <$> fs'
                    ds'' = (\(a,b,c) -> FileEntry a b c) <$> ds'
+                   ds''' = filter (\f -> not $ feName f `P.elem` [".",".."]) ds''
 
-               liftIO $ print path >> print entries >> print fs'' >> print ds'' -- debugging
-               return (fs'', ds'')
+               print path >> print entries >> print fs'' >> print ds''' -- debugging
+               return (fs'', ds''')
 
-  where strTime ptime = formatTime defaultTimeLocale "%F - %T" (posixSecondsToUTCTime ptime)
+  where strTime = formatTime defaultTimeLocale "%F - %T" . posixSecondsToUTCTime
         showSize :: Int -> String
         showSize n
           | n < 1000    = show n                 ++ " bytes"
@@ -130,7 +132,7 @@ serveDir p = do (fs, ds) <- liftIO $ dirInfo p
 prefix :: String
 prefix = "served_files/"
 
--- type File = (Text, FileInfo ByteString) -- (field where came from, info)
+-- type File = (Text, FileInfo ByteString) -- (field in form where came from, info)
 -- FileInfo { fileName :: ByteString, fileContentType :: ByteString, fileContent :: c }
 handleFiles :: [S.File] -> IO ()
 handleFiles fs = let fis = map snd fs
