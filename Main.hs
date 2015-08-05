@@ -8,6 +8,7 @@ import           Control.Monad.IO.Class               (liftIO)
 import           Data.Functor                         ((<$>))
 import           Data.Monoid                          ((<>))
 import qualified Data.Text.Lazy                       as T
+import qualified Data.Text.Lazy.IO                    as TIO
 import           Prelude                              as P
 import           System.Environment
 import           System.IO
@@ -50,7 +51,8 @@ main = do envPort <- getEnv "PORT"
           c <- hGetContents h
           let l = P.lines c
           scotty (read envPort) $ do
-            middleware $ addHeaders [(B.pack "X-Clacks-Overhead", B.pack "GNU Terry Pratchett")]
+            middleware $
+              addHeaders [(B.pack "X-Clacks-Overhead", B.pack "GNU Terry Pratchett")]
             middleware logStdoutDev
             middleware static
             when (P.length l == 2) $ do
@@ -63,11 +65,11 @@ main = do envPort <- getEnv "PORT"
 routes :: ScottyM ()
 routes = do S.get "/" $ blaze $ template "HOME" homePage
 
+            -- todo, test if sought file is dir, choose intelligently what to display
             S.get (regex "^/files/$") $ serveDir ""  -- directory names must end in '/'
 
             S.get (regex "^/files/(.+/)$") $ do (fp :: String) <- param "1"
                                                 liftIO $ print $ "opening directory: " ++ fp
-                                                liftIO $ print fp
                                                 serveDir fp
 
             S.get (regex "^/files/(.*[^/])$") $ do (fp :: String) <- param "1"
@@ -94,6 +96,13 @@ routes = do S.get "/" $ blaze $ template "HOME" homePage
 
             S.get "/donnerfile" $ file "/home/miles/ruby/donnerator/donnerisms.txt"
 
+-- todo compile elm files on server start
+
+            S.get "/elmtest" $ do c <- liftIO $ do
+                                    h <- openFile "./elm/testpage.html" ReadMode
+                                    TIO.hGetContents h
+                                  S.html c
+
             S.notFound $ html "not here"
 
 blaze = S.html . renderHtml
@@ -110,16 +119,16 @@ dirInfo p = do let path = prefix ++ p
                fattrs <- mapM (F.getFileStatus . (path ++)) fs
                dattrs <- mapM (F.getFileStatus . (path ++)) ds
 
-               let fs'  = zip3 fs (map (strTime . F.modificationTimeHiRes) fattrs) (map (showSize . fromIntegral . F.fileSize) fattrs)
-                   ds'  = zip3 ds (map (strTime . F.modificationTimeHiRes) dattrs) (map (showSize . fromIntegral . F.fileSize) dattrs)
-                   fs'' = (\(a,b,c) -> FileEntry a b c) <$> fs'
-                   ds'' = (\(a,b,c) -> FileEntry a b c) <$> ds'
-                   ds''' = filter (\f -> not $ feName f `P.elem` [".",".."]) ds''
+               -- will have to write zipWith4 if we add more properties to FileEntry
+               let fs'  = zipWith3 FileEntry fs (map (strTime . F.modificationTimeHiRes) fattrs) (map (showSize . fromIntegral . F.fileSize) fattrs)
+                   ds'  = zipWith3 FileEntry ds (map (strTime . F.modificationTimeHiRes) dattrs) (map (showSize . fromIntegral . F.fileSize) dattrs)
+                   ds'' = filter (\f -> feName f `notElem` [".",".."]) ds'
 
-               print path >> print entries >> print fs'' >> print ds''' -- debugging
-               return (fs'', ds''')
+               print path >> print entries >> print fs' >> print ds'' -- debugging
 
-  where strTime = formatTime defaultTimeLocale "%F - %T" . posixSecondsToUTCTime
+               return (fs', ds'')
+
+  where strTime = formatTime defaultTimeLocale "%F" . posixSecondsToUTCTime
         showSize :: Int -> String
         showSize n
           | n < 1000    = show n                 ++ " bytes"
@@ -139,8 +148,7 @@ handleFiles fs = let fis = map snd fs
                      fis' = filter (\f -> not ('/' `B.elem` fileName f))  fis
                  in void $ forM fis' $
                     \f ->
-                     BL.writeFile (B.unpack (B.pack prefix  <> fileName f)) $ fileContent f
-
+                     BL.writeFile (B.unpack (B.pack prefix <> fileName f)) $ fileContent f
 
 getDonnered :: IO String
 getDonnered =  do (_, Just hout, _, _) <- createProcess (proc "./donnerate.sh" []) { std_out = CreatePipe, cwd = Just "/home/miles/ruby/donnerator" }
