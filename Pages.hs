@@ -1,5 +1,4 @@
 {-# LANGUAGE OverloadedStrings #-}
-
 module Pages (template
              , renderText
              , renderDir
@@ -56,7 +55,7 @@ renderDir dir fs ds =
 
 uploadPage :: Html
 uploadPage = template "upload form" $ do
-  link  ! rel "stylesheet" ! href "/static/css/dropzone.css"
+  link ! rel "stylesheet" ! href "https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.css"
   H.form mempty ! action "/uploaded" ! class_ "dropzone" ! A.id "customdropzone"
 
 template :: String -> Html -> Html
@@ -65,7 +64,8 @@ template title body = do
   html ! lang "en" $ do
     H.head $ do meta ! charset "utf-8"
                 meta ! name "viewport" ! content "width=device-width, initial-scale=1"
-                H.title (toHtml title)
+                link ! rel "shortcut icon" ! type_ "image/x-icon" ! href "/favicon.ico"
+                H.title $ toHtml title
                 defaultIncludes
     H.body $ do body
                 theFooter

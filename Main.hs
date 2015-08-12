@@ -96,6 +96,8 @@ routes = do S.get "/" $ blaze $ template "HOME" homePage
 
             S.get "/donnerfile" $ file "/home/miles/ruby/donnerator/donnerisms.txt"
 
+            S.get "/favicon.ico" $ file "static/favicon.ico"
+
             S.notFound $ html "not here"
 
 blaze = S.html . renderHtml
