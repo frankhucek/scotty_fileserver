@@ -81,14 +81,17 @@ theFooter = nav ! class_ "navbar navbar-default navbar-fixed-bottom" $
               a ! class_ "navbar-link" ! href "/donneradd"  $ "add to donnerFile"
 
 defaultIncludes :: Html
-defaultIncludes = do script mempty ! src "/static/js/dropzone.js"
-                     script mempty ! src "/static/js/custom-drop-form.js"
+defaultIncludes = do script mempty !
+                       src "https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.js"
+                     script mempty !
+                       src "https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.css"
                      link ! rel "stylesheet" ! -- bootstrap
                        href "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
                      script mempty !
                        src "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
                      script mempty !
                        src "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+                     script mempty ! src "/static/js/custom-drop-form.js"
                      H.link ! A.href "/static/css/default.css" !
                        A.title "compact" ! A.rel "stylesheet" ! A.type_ "text/css"
 
