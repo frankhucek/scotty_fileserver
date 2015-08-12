@@ -4,4 +4,3 @@ cabal.sandbox.config
 auth.txt
 served_files/*
 nohup.out
-elm/elm-stuff/*
