@@ -96,13 +96,6 @@ routes = do S.get "/" $ blaze $ template "HOME" homePage
 
             S.get "/donnerfile" $ file "/home/miles/ruby/donnerator/donnerisms.txt"
 
--- todo compile elm files on server start
-
-            S.get "/elmtest" $ do c <- liftIO $ do
-                                    h <- openFile "./elm/testpage.html" ReadMode
-                                    TIO.hGetContents h
-                                  S.html c
-
             S.notFound $ html "not here"
 
 blaze = S.html . renderHtml
