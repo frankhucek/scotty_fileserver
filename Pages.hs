@@ -30,30 +30,28 @@ renderDir :: String -> [FileEntry] -> [FileEntry] -> Html
 renderDir dir fs ds =
   let fs' = sort fs
       ds' = sort ds
-
       frows = foldl (>>) mempty $ fmap
               (\f -> tr $ do
-                  td (a ! href (toValue $ mconcat ["/files/", dir, feName f]) $ toHtml $ feName f)
+                  td (a ! href (toValue $ mconcat ["/files/", dir, feName f]) $
+                      toHtml $ feName f)
                   td $ toHtml $ feLastModified f
                   td $ toHtml $ feSize f) fs'
 
       drows = foldl (>>) mempty $ fmap
               (\d -> tr $ do
-                  td (a ! href (toValue $ mconcat ["/files/", dir, feName d, "/"]) $ toHtml $ feName d)
+                  td (a ! href (toValue $ mconcat ["/files/", dir, feName d, "/"]) $
+                      toHtml $ feName d ++ "/")
                   td $ toHtml $ feLastModified d
                   td $ toHtml $ feSize d) ds'
-
-  in html $ body $ table $ do
-    tr $ do
-      td ! A.style "border-bottom:1px solid black" $ "files"
-      td ! A.style "border-bottom:1px solid black" $ "last modified"
-      td ! A.style "border-bottom:1px solid black" $ "size"
-    frows
-    tr $ do
-      td ! A.style "border-bottom:1px solid black" $ "folders"
-      td ! A.style "border-bottom:1px solid black" $ "last modified"
-      td ! A.style "border-bottom:1px solid black" $ "size"
-    drows
+      ls = frows >> drows
+  in html $ body $ H.div ! class_ "container-fluid" $ table ! class_ "table" $ do
+    thead $ do
+      tr $ do
+        th "files"
+        th "last modified"
+        th "size"
+    tbody ! class_ "fs-body" $ do
+      ls
 
 
 uploadPage :: Html
@@ -62,23 +60,38 @@ uploadPage = template "upload form" $ do
   H.form mempty ! action "/uploaded" ! class_ "dropzone" ! A.id "customdropzone"
 
 template :: String -> Html -> Html
-template title body = html $ do H.head $ do H.title (toHtml title)
-                                            defaultIncludes
-                                H.body $ do body
-                                            theFooter
+template title body = do
+  docType
+  html ! lang "en" $ do
+    H.head $ do meta ! charset "utf-8"
+                meta ! name "viewport" ! content "width=device-width, initial-scale=1"
+                H.title (toHtml title)
+                defaultIncludes
+    H.body $ do body
+                theFooter
 
 theFooter :: Html
-theFooter = H.footer $ do
-            a ! href "/files/"     $ "file serving"
-            a ! href "/upload"     $ "file uploading"
-            a ! href "/donnerator" $ "donnerisms"
-            a ! href "/donnerfile" $ "donnerfile"
-            a ! href "/donneradd"  $ "add to donnerFile"
+theFooter = nav ! class_ "navbar navbar-default navbar-fixed-bottom" $
+            H.div ! class_ "container" $
+            H.div ! class_ "footer" $ do
+              a ! class_ "navbar-link" ! href "/files/"     $ "file serving"
+              a ! class_ "navbar-link" ! href "/upload"     $ "file uploading"
+              a ! class_ "navbar-link" ! href "/donnerator" $ "donnerisms"
+              a ! class_ "navbar-link" ! href "/donnerfile" $ "donnerfile"
+              a ! class_ "navbar-link" ! href "/donneradd"  $ "add to donnerFile"
 
 defaultIncludes :: Html
-defaultIncludes = do H.link ! A.href "/static/css/default.css" ! A.title "compact" ! A.rel "stylesheet" ! A.type_ "text/css"
-                     script mempty ! src "/static/js/dropzone.js"
+defaultIncludes = do script mempty ! src "/static/js/dropzone.js"
                      script mempty ! src "/static/js/custom-drop-form.js"
+                     link ! rel "stylesheet" ! -- bootstrap
+                       href "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+                     script mempty !
+                       src "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+                     script mempty !
+                       src "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+                     H.link ! A.href "/static/css/default.css" !
+                       A.title "compact" ! A.rel "stylesheet" ! A.type_ "text/css"
+
 
 donnerPage :: String -> Html
 donnerPage ism = template "Donnerator Output" $ p $ toHtml ism
