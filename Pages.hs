@@ -15,7 +15,7 @@ import qualified Text.Blaze.Html5            as H
 import           Text.Blaze.Html5.Attributes
 import qualified Text.Blaze.Html5.Attributes as A
 
-import           Data.List                   (sort)
+import           Data.List                   (isSuffixOf, sort)
 import           Data.Monoid
 import qualified Data.Text.Lazy              as T
 
@@ -27,18 +27,19 @@ homePage = renderText "home"
 
 renderDir :: String -> [FileEntry] -> [FileEntry] -> Html
 renderDir dir fs ds =
-  let fs' = sort fs
+  let dir' = if null dir then dir else (reverse $ dropWhile (== '/') $ reverse dir) ++ "/"
+      fs' = sort fs
       ds' = sort ds
       frows = foldl (>>) mempty $ fmap
               (\f -> tr $ do
-                  td (a ! href (toValue $ mconcat ["/files/", dir, feName f]) $
+                  td (a ! href (toValue $ mconcat ["/files/", dir', feName f]) $
                       toHtml $ feName f)
                   td $ toHtml $ feLastModified f
                   td $ toHtml $ feSize f) fs'
 
       drows = foldl (>>) mempty $ fmap
               (\d -> tr $ do
-                  td (a ! href (toValue $ mconcat ["/files/", dir, feName d, "/"]) $
+                  td (a ! href (toValue $ mconcat ["/files/", dir', feName d, "/"]) $
                       toHtml $ feName d ++ "/")
                   td $ toHtml $ feLastModified d
                   td $ toHtml $ feSize d) ds'

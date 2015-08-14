@@ -2,45 +2,40 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 
 module Main where
+import           Pages
 import           Types
 
+import           Control.Monad
 import           Control.Monad.IO.Class               (liftIO)
+import           Data.ByteString.Char8                as B (elem, pack, unpack)
+import           Data.ByteString.Lazy.Char8           as BL (writeFile)
 import           Data.Functor                         ((<$>))
+import           Data.List                            (isPrefixOf)
 import           Data.Monoid                          ((<>))
 import qualified Data.Text.Lazy                       as T
 import qualified Data.Text.Lazy.IO                    as TIO
+import           Data.Time.Clock.POSIX                (posixSecondsToUTCTime)
+import           Data.Time.Format                     (formatTime)
 import           Prelude                              as P
+import           System.Directory                     (doesDirectoryExist,
+                                                       doesFileExist,
+                                                       getDirectoryContents)
 import           System.Environment
 import           System.IO
+import           System.Locale                        (defaultTimeLocale)
+import qualified System.Posix.Files                   as F
+import           System.Process
 
-import           Data.ByteString.Char8                as B (elem, pack, unpack)
-import           Data.ByteString.Lazy.Char8           as BL (writeFile)
-
+import           Network.Wai.Handler.Warp             (Settings (..),
+                                                       defaultSettings, setPort)
 import           Network.Wai.Middleware.AddHeaders    (addHeaders)
 import qualified Network.Wai.Middleware.HttpAuth      as Auth
 import           Network.Wai.Middleware.RequestLogger
 import           Network.Wai.Middleware.Static
-
-import           Text.Blaze.Html.Renderer.Text        (renderHtml)
-import           Web.Scotty                           as S
-
-import           Pages
-
--- for servedir
-import           Control.Monad
-import           Data.Time.Clock.POSIX                (posixSecondsToUTCTime)
-import           Data.Time.Format                     (formatTime)
-import           System.Directory                     (doesDirectoryExist,
-                                                       doesFileExist,
-                                                       getDirectoryContents)
-import           System.Locale                        (defaultTimeLocale)
-import qualified System.Posix.Files                   as F
-
--- for upload handling
 import           Network.Wai.Parse                    as N (fileContent,
                                                             fileName)
--- for donnerator
-import           System.Process
+import           Text.Blaze.Html.Renderer.Text        (renderHtml)
+import           Web.Scotty                           as S
 
 -- run with environment var PORT set to whatever port
 -- for auth, make a file "auth.txt"
@@ -50,33 +45,34 @@ main = do envPort <- getEnv "PORT"
           h <- openFile "auth.txt" ReadMode
           c <- hGetContents h
           let l = P.lines c
-          scotty (read envPort) $ do
-            middleware $
-              addHeaders [(B.pack "X-Clacks-Overhead", B.pack "GNU Terry Pratchett")]
-            middleware logStdoutDev
-            middleware static
-            when (P.length l == 2) $ do
-              let usn = head l
-                  passwd = l !! 1
-              middleware $ Auth.basicAuth
-                (\u p -> return $ u == B.pack usn && p == B.pack passwd) " Welcome "
-            routes
+          scottyOpts
+            (Options 1 (setPort (read envPort) defaultSettings)) $ do
+              middleware $
+                addHeaders [(B.pack "X-Clacks-Overhead", B.pack "GNU Terry Pratchett")]
+              middleware logStdoutDev
+              middleware $ staticPolicy $
+                hasPrefix "static/" <|> hasPrefix "served_files/"
+              when (P.length l == 2) $ do
+                let usn = head l
+                    passwd = l !! 1
+                middleware $ Auth.basicAuth
+                  (\u p -> return $ u == B.pack usn && p == B.pack passwd) " Welcome "
+              routes
 
 routes :: ScottyM ()
 routes = do S.get "/" $ blaze $ template "HOME" homePage
 
-            -- todo, test if sought file is dir, choose intelligently what to display
-            S.get (regex "^/files/$") $ serveDir ""  -- directory names must end in '/'
+            S.get "/files/" $ serveDir ""
 
-            S.get (regex "^/files/(.+/)$") $ do (fp :: String) <- param "1"
-                                                liftIO $ print $ "opening directory: " ++ fp
-                                                serveDir fp
+            S.get (regex "^/files/(.+)$") $ do (f :: String) <- param "1"
+                                               b <- liftIO $ doesFileExist (prefix <> f)
+                                               unless b $ next
+                                               liftIO $ print $ "opening file: " ++ f
+                                               file' f
 
-            S.get (regex "^/files/(.*[^/])$") $ do (fp :: String) <- param "1"
-                                                   file' fp
-
-            S.get "/files/:file" $ do fname <- param "file"  -- probably redundant
-                                      file' fname
+            S.get (regex "^/files/(.+)$") $ do dir <- param "1"
+                                               liftIO $ print $ "opening dir: " ++ dir
+                                               serveDir dir
 
             S.get "/upload" $ blaze uploadPage
 
@@ -106,9 +102,9 @@ file' :: String -> ActionM ()
 file' f = file $ prefix <> f
 
 dirInfo :: String -> IO ([FileEntry], [FileEntry])
-dirInfo p = do let path = prefix ++ p
+dirInfo p = do let path = if p /= "" then prefix ++ p ++ "/" else prefix
                entries <- getDirectoryContents path
-               fs <- filterM (doesFileExist . (path ++)) entries
+               fs <- filterM (doesFileExist . (path ++ )) entries
                ds <- filterM (doesDirectoryExist . ( path ++)) entries
 
                fattrs <- mapM (F.getFileStatus . (path ++)) fs
@@ -126,9 +122,9 @@ dirInfo p = do let path = prefix ++ p
   where strTime = formatTime defaultTimeLocale "%F" . posixSecondsToUTCTime
         showSize :: Int -> String
         showSize n
-          | n < 1000    = show n                 ++ " bytes"
-          | n < 1000000 = show (n `div` 1000)    ++ " kb"
-          | otherwise   = show (n `div` 1000000) ++ " mb"
+          | n < 1000    = show n                 ++ " b"
+          | n < 1000000 = show (n `div` 1000)    ++ " k"
+          | otherwise   = show (n `div` 1000000) ++ " m"
 
 serveDir p = do (fs, ds) <- liftIO $ dirInfo p
                 blaze $ template p $ renderDir p fs ds
