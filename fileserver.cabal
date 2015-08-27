@@ -31,7 +31,7 @@ executable one
                      , wai-extra
                      , directory
                      , unix
-                     , time
+--                     , time < 1.5
                      , old-locale
 -- for donnerator
                      , process

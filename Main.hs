@@ -14,8 +14,6 @@ import           Data.List                            (isPrefixOf)
 import           Data.Monoid                          ((<>))
 import qualified Data.Text.Lazy                       as T
 import qualified Data.Text.Lazy.IO                    as TIO
-import           Data.Time.Clock.POSIX                (posixSecondsToUTCTime)
-import           Data.Time.Format                     (formatTime)
 import           Prelude                              as P
 import           System.Directory                     (doesDirectoryExist,
                                                        doesFileExist,
@@ -60,7 +58,8 @@ main = do envPort <- getEnv "PORT"
               routes
 
 routes :: ScottyM ()
-routes = do S.get "/" $ blaze $ template "HOME" homePage
+routes = do S.get "/" $ do c <- liftIO $ readFile "/home/frank/bin_storage/LoginWelcome/LoginWelcome.txt"
+                           blaze $ homePage c 
 
             S.get "/files/" $ serveDir ""
 
@@ -80,17 +79,17 @@ routes = do S.get "/" $ blaze $ template "HOME" homePage
                                     liftIO $ handleFiles fs
                                     html $ T.pack $ show fs  -- does not get displayed when using dropzone
 
-            S.get "/donnerator" $ do dism <- liftIO getDonnered
-                                     blaze $ donnerPage dism
+            --S.get "/donnerator" $ do dism <- liftIO getDonnered
+             --                        blaze $ donnerPage dism
 
-            S.get "/donneradd" $ blaze donnerAddPage
+            --S.get "/donneradd" $ blaze donnerAddPage
 
-            S.post "/donneradd" $ do (line :: String) <- param "donner_line"
-                                     liftIO $
-                                       appendFile "/home/miles/ruby/donnerator/donnerisms.txt" $ line ++ "\n"
-                                     redirect "/donnerfile"
+            --S.post "/donneradd" $ do (line :: String) <- param "donner_line"
+              --                       liftIO $
+              --                         appendFile "/home/miles/ruby/donnerator/donnerisms.txt" $ line ++ "\n"
+              --                       redirect "/donnerfile"
 
-            S.get "/donnerfile" $ file "/home/miles/ruby/donnerator/donnerisms.txt"
+            --S.get "/donnerfile" $ file "/home/miles/ruby/donnerator/donnerisms.txt"
 
             S.get "/favicon.ico" $ file "static/favicon.ico"
 
@@ -119,7 +118,7 @@ dirInfo p = do let path = if p /= "" then prefix ++ p ++ "/" else prefix
 
                return (fs', ds'')
 
-  where strTime = formatTime defaultTimeLocale "%F" . posixSecondsToUTCTime
+  where strTime x = "fish" --formatTime defaultTimeLocale "%F" . posixSecondsToUTCTime
         showSize :: Int -> String
         showSize n
           | n < 1000    = show n                 ++ " b"
@@ -141,6 +140,6 @@ handleFiles fs = let fis = map snd fs
                     \f ->
                      BL.writeFile (B.unpack (B.pack prefix <> fileName f)) $ fileContent f
 
-getDonnered :: IO String
-getDonnered =  do (_, Just hout, _, _) <- createProcess (proc "./donnerate.sh" []) { std_out = CreatePipe, cwd = Just "/home/miles/ruby/donnerator" }
-                  hGetContents hout
+--getDonnered :: IO String
+--getDonnered =  do (_, Just hout, _, _) <- createProcess (proc "./donnerate.sh" []) { std_out = CreatePipe, cwd = Just "/home/miles/ruby/donnerator" }
+--                  hGetContents hout

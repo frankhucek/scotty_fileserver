@@ -4,8 +4,8 @@ module Pages (template
              , renderDir
              , uploadPage
              , homePage
-             , donnerPage
-             , donnerAddPage
+--             , donnerPage
+--             , donnerAddPage
              ) where
 
 import           Types
@@ -22,8 +22,9 @@ import qualified Data.Text.Lazy              as T
 renderText :: T.Text -> Html
 renderText text = html $ body $ p $ toHtml text
 
-homePage :: Html
-homePage = renderText "home"
+homePage :: String -> Html
+homePage s = template "Fileserving" $ do
+    pre $ toHtml s 
 
 renderDir :: String -> [FileEntry] -> [FileEntry] -> Html
 renderDir dir fs ds =
@@ -77,9 +78,9 @@ theFooter = nav ! class_ "navbar navbar-default navbar-fixed-bottom" $
             H.div ! class_ "footer" $ do
               a ! class_ "navbar-link" ! href "/files/"     $ "file serving"
               a ! class_ "navbar-link" ! href "/upload"     $ "file uploading"
-              a ! class_ "navbar-link" ! href "/donnerator" $ "donnerisms"
-              a ! class_ "navbar-link" ! href "/donnerfile" $ "donnerfile"
-              a ! class_ "navbar-link" ! href "/donneradd"  $ "add to donnerFile"
+              -- a ! class_ "navbar-link" ! href "/donnerator" $ "donnerisms"
+              -- a ! class_ "navbar-link" ! href "/donnerfile" $ "donnerfile"
+              -- a ! class_ "navbar-link" ! href "/donneradd"  $ "add to donnerFile"
 
 defaultIncludes :: Html
 defaultIncludes = do script mempty !
@@ -97,15 +98,15 @@ defaultIncludes = do script mempty !
                        A.title "compact" ! A.rel "stylesheet" ! A.type_ "text/css"
 
 
-donnerPage :: String -> Html
-donnerPage ism = template "Donnerator Output" $ p $ toHtml ism
+--donnerPage :: String -> Html
+--donnerPage ism = template "Donnerator Output" $ p $ toHtml ism
 
-donnerAddPage :: Html
-donnerAddPage = template "Add to Donnerfile" $ do
-  p "add line to the donnerfile"
-  p "no punctuation EXCEPT A PERIOD AT THE END OF EVERY DONNERISM"
-  p "capitalization is irrelevant"
-  p "seriously, that period is important"
-  H.form ! A.method "POST" ! action "/donneradd" $ do
-    input ! type_ "text" ! name "donner_line" ! size "70"
-    input ! type_ "submit" ! value "SUBMIT"
+--donnerAddPage :: Html
+--donnerAddPage = template "Add to Donnerfile" $ do
+--  p "add line to the donnerfile"
+--  p "no punctuation EXCEPT A PERIOD AT THE END OF EVERY DONNERISM"
+--  p "capitalization is irrelevant"
+--  p "seriously, that period is important"
+--  H.form ! A.method "POST" ! action "/donneradd" $ do
+--    input ! type_ "text" ! name "donner_line" ! size "70"
+--    input ! type_ "submit" ! value "SUBMIT"
