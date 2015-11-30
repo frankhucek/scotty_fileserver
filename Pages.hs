@@ -6,6 +6,7 @@ module Pages (template
              , homePage
 --             , donnerPage
 --             , donnerAddPage
+             , addTorrentPage
              ) where
 
 import           Types
@@ -24,7 +25,13 @@ renderText text = html $ body $ p $ toHtml text
 
 homePage :: String -> Html
 homePage s = template "Fileserving" $ do
-    pre $ toHtml s 
+    pre $ toHtml s
+
+addTorrentPage :: Html
+addTorrentPage = template "add a torrent" $ do
+                   H.form ! A.method "POST" ! action "/torrents" $ do
+                                              input ! type_ "text" ! name "magnet" ! size "70"
+                                              input ! type_ "submit" ! value "ADD"
 
 renderDir :: String -> [FileEntry] -> [FileEntry] -> Html
 renderDir dir fs ds =

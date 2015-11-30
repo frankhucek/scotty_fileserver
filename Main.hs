@@ -59,7 +59,7 @@ main = do envPort <- getEnv "PORT"
 
 routes :: ScottyM ()
 routes = do S.get "/" $ do c <- liftIO $ readFile "/home/frank/bin_storage/LoginWelcome/LoginWelcome.txt"
-                           blaze $ homePage c 
+                           blaze $ homePage c
 
             S.get "/files/" $ serveDir ""
 
@@ -79,6 +79,12 @@ routes = do S.get "/" $ do c <- liftIO $ readFile "/home/frank/bin_storage/Login
                                     liftIO $ handleFiles fs
                                     html $ T.pack $ show fs  -- does not get displayed when using dropzone
 
+            S.get "/torrents" $ do blaze addTorrentPage
+
+            S.post "/torrents" $ do (magnet :: String) <- param "magnet"
+                                    liftIO $ do
+                                      createProcess $ shell ("transmission-remote -a '" ++ magnet ++ "'")
+                                    redirect "/"
             --S.get "/donnerator" $ do dism <- liftIO getDonnered
              --                        blaze $ donnerPage dism
 
