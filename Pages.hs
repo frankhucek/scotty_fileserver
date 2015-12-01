@@ -32,6 +32,11 @@ addTorrentPage = template "add a torrent" $ do
                    H.form ! A.method "POST" ! action "/torrents" $ do
                                               input ! type_ "text" ! name "magnet" ! size "70"
                                               input ! type_ "submit" ! value "ADD"
+                   H.form ! enctype "multipart/form-data" ! A.method "POST" ! action "/torrentupload" $ do
+                                              input ! type_ "file" ! name "torrentfiles" ! A.multiple ""
+                                              input ! type_ "submit" ! value "UPLOAD TORRENT FILES"
+
+
 
 renderDir :: String -> [FileEntry] -> [FileEntry] -> Html
 renderDir dir fs ds =

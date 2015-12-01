@@ -1,4 +1,5 @@
 {-# LANGUAGE OverloadedStrings   #-}
+{-# LANGUAGE BangPatterns        #-}
 {-# LANGUAGE ScopedTypeVariables #-}
 
 module Main where
@@ -76,15 +77,22 @@ routes = do S.get "/" $ do c <- liftIO $ readFile "/home/frank/bin_storage/Login
             S.get "/upload" $ blaze uploadPage
 
             S.post "/uploaded" $ do fs <- files
-                                    liftIO $ handleFiles fs
+                                    liftIO $ handleFiles prefix fs
                                     html $ T.pack $ show fs  -- does not get displayed when using dropzone
 
-            S.get "/torrents" $ do blaze addTorrentPage
+            S.get "/torrents" $ blaze addTorrentPage
 
             S.post "/torrents" $ do (magnet :: String) <- param "magnet"
-                                    liftIO $ do
+                                    -- (file :: S.File) <- param "torrentfiles"
+                                    if (magnet /= "") then liftIO $ do
                                       createProcess $ shell ("transmission-remote -a '" ++ magnet ++ "'")
-                                    redirect "/"
+                                      return ()
+                                      else liftIO $ return ()
+                                    redirect "/torrents"
+
+            S.post "/torrentupload" $ do file <- files
+                                         liftIO $ handleFiles torrentdir file
+                                         redirect "/torrents"
             --S.get "/donnerator" $ do dism <- liftIO getDonnered
              --                        blaze $ donnerPage dism
 
@@ -137,14 +145,17 @@ serveDir p = do (fs, ds) <- liftIO $ dirInfo p
 prefix :: String
 prefix = "served_files/"
 
+torrentdir :: String
+torrentdir = "/home/frank/torrents/"
+
 -- type File = (Text, FileInfo ByteString) -- (field in form where came from, info)
 -- FileInfo { fileName :: ByteString, fileContentType :: ByteString, fileContent :: c }
-handleFiles :: [S.File] -> IO ()
-handleFiles fs = let fis = map snd fs
-                     fis' = filter (\f -> not ('/' `B.elem` fileName f))  fis
-                 in void $ forM fis' $
-                    \f ->
-                     BL.writeFile (B.unpack (B.pack prefix <> fileName f)) $ fileContent f
+handleFiles :: String -> [S.File] -> IO ()
+handleFiles pref fs = let fis = map snd fs
+                          fis' = filter (\f -> not ('/' `B.elem` fileName f))  fis
+                      in void $ forM fis' $
+                         \f ->
+                         BL.writeFile (B.unpack (B.pack pref <> fileName f)) $ fileContent f
 
 --getDonnered :: IO String
 --getDonnered =  do (_, Just hout, _, _) <- createProcess (proc "./donnerate.sh" []) { std_out = CreatePipe, cwd = Just "/home/miles/ruby/donnerator" }
