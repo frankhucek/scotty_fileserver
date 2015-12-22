@@ -21,9 +21,17 @@ import           System.Directory                     (doesDirectoryExist,
                                                        getDirectoryContents)
 import           System.Environment
 import           System.IO
+import           System.Posix.Escape                  (escape)
 import           System.Locale                        (defaultTimeLocale)
 import qualified System.Posix.Files                   as F
 import           System.Process
+
+import           Text.Blaze                           (preEscapedString)
+import           Text.Blaze.Html5                     as H (a, div, p, script,
+                                                            table, tbody,
+                                                            toHtml, (!))
+import           Text.Blaze.Html5.Attributes          as A (class_, href, id,
+                                                            type_)
 
 import           Network.Wai.Handler.Warp             (Settings (..),
                                                        defaultSettings, setPort)
@@ -84,15 +92,47 @@ routes = do S.get "/" $ do c <- liftIO $ readFile "/home/frank/bin_storage/Login
 
             S.post "/torrents" $ do (magnet :: String) <- param "magnet"
                                     -- (file :: S.File) <- param "torrentfiles"
-                                    if (magnet /= "") then liftIO $ do
-                                      createProcess $ shell ("transmission-remote -a '" ++ magnet ++ "'")
-                                      return ()
+                                    if (magnet /= "") then liftIO $ void $ do
+                                      createProcess $ shell ("transmission-remote -a '" ++ escape magnet ++ "'")
                                       else liftIO $ return ()
                                     redirect "/torrents"
 
             S.post "/torrentupload" $ do file <- files
                                          liftIO $ handleFiles torrentdir file
                                          redirect "/torrents"
+
+            S.get "/torrentstatus" $ do
+                 js <- liftIO $ readFile "static/js/torrentstatus.js"
+                 blaze $ torrentStatusPage js
+                                 -- add functionality to move files to specified folders
+
+            S.get "/torrentstatusraw" $ do
+                 res <- liftIO $ shellWithOut "transmission-remote --debug -l 2>&1 | sed '1,/200 OK/d'| sed '1,/got response/d'| grep -A 1 -- '--------'| head -n 2| tail -n 1"
+                 S.json res
+
+            -- handle input from stuff on torrentstatus page, and move downloaded files accordingly
+                 -- adjust transmission directory for file also
+            S.post "/torrentfilemove" $ do
+              (torrentnum :: Int) <- param "torrentnumber"
+              (movedir :: String) <- param "movedir"
+              -- liftIO $ putStrLn $ "torrent number to move " ++ show torrentnum ++ " move to: " ++ movedir
+              if (torrentnum >= 0 && movedir /= "") then liftIO $ void $ do
+                createProcess $ shell ("transmission-remote -t " ++ (escape $ show torrentnum) ++ " --move " ++ escape movedir ++ " --find " ++ escape movedir ++ " && transmission-remote -t " ++ (escape $ show torrentnum) ++ " -v")
+                else liftIO $ return ()
+              redirect "/torrentstatus"
+
+
+            --S.get "/torrentstatus" $ do
+              --res <- liftIO $ do
+                --(_, Just hout, _, _) <- createProcess (shell "transmission-remote -l") { std_out = CreatePipe }
+                --hGetContents hout
+              --script <- liftIO $ readFile "refreshscript.txt"
+              --let rlines = lines res
+                                 -- TODO parse this better in terms of tabs etc
+                  --output = foldl (>>) mempty $ (p . toHtml) <$> rlines
+                  --script' = toHtml script
+              --blaze $ template "torrent list" (output `mappend` script')
+
             --S.get "/donnerator" $ do dism <- liftIO getDonnered
              --                        blaze $ donnerPage dism
 
@@ -108,6 +148,18 @@ routes = do S.get "/" $ do c <- liftIO $ readFile "/home/frank/bin_storage/Login
             S.get "/favicon.ico" $ file "static/favicon.ico"
 
             S.notFound $ html "not here"
+
+
+shellWithOut :: String -> IO String
+shellWithOut s = do
+  (_, Just hout, __, pHandle) <- createProcess (shell s) { std_out = CreatePipe }
+  waitForProcess pHandle
+  c <- hGetContents' hout
+  hClose hout
+  return c
+
+hGetContents' h = hGetContents h >>= (\s -> length s `seq` return s)
+
 
 blaze = S.html . renderHtml
 
@@ -136,8 +188,8 @@ dirInfo p = do let path = if p /= "" then prefix ++ p ++ "/" else prefix
         showSize :: Int -> String
         showSize n
           | n < 1000    = show n                 ++ " b"
-          | n < 1000000 = show (n `div` 1000)    ++ " k"
-          | otherwise   = show (n `div` 1000000) ++ " m"
+          | n < 1000000 = show (P.div n 1000)    ++ " k"
+          | otherwise   = show (P.div n 1000000) ++ " m"
 
 serveDir p = do (fs, ds) <- liftIO $ dirInfo p
                 blaze $ template p $ renderDir p fs ds

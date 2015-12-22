@@ -4,7 +4,7 @@ Dropzone.options.customdropzone = {
     parallelUploads: 4,
     uploadMultiple: true,
 //    addRemoveLinks: true,
-    dictDefaultMessage: "droppeth thy files",
+    dictDefaultMessage: "Yeah so drop your files here", //"droppeth thy files",
     accept: function(file, done) {
         done(); // with no args, true, with args, error with msg
 

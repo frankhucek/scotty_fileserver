@@ -7,6 +7,7 @@ module Pages (template
 --             , donnerPage
 --             , donnerAddPage
              , addTorrentPage
+             , torrentStatusPage
              ) where
 
 import           Types
@@ -31,12 +32,23 @@ addTorrentPage :: Html
 addTorrentPage = template "add a torrent" $ do
                    H.form ! A.method "POST" ! action "/torrents" $ do
                                               input ! type_ "text" ! name "magnet" ! size "70"
-                                              input ! type_ "submit" ! value "ADD"
-                   H.form ! enctype "multipart/form-data" ! A.method "POST" ! action "/torrentupload" $ do
-                                              input ! type_ "file" ! name "torrentfiles" ! A.multiple ""
-                                              input ! type_ "submit" ! value "UPLOAD TORRENT FILES"
+                                              input ! type_ "submit" ! value "Add Magnet Link"
+                   --H.form ! enctype "multipart/form-data" ! A.method "POST" ! action "/torrentupload" $ do
+                   --                           input ! type_ "file" ! name "torrentfiles" ! A.multiple ""
+                   --                           input ! type_ "submit" ! value "UPLOAD TORRENT FILES"
+                   p $ toHtml $ T.pack "Add .torrent files to drop box"
+                   link ! rel "stylesheet" ! href "https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.css"
+                   H.form mempty ! action "/torrentupload" ! class_ "dropzone" ! A.id "customdropzone"
 
-
+torrentStatusPage :: String -> Html
+torrentStatusPage s = template "torrents" $ do
+  script ! type_ "text/javascript" $ preEscapedString $ s
+  H.div ! class_ "container-fluid" $
+    table ! A.id "res" ! class_ "table" $ tbody ! class_ "fs-body" $ mempty
+  H.form ! A.method "POST" ! action "/torrentfilemove" $ do
+    input ! type_ "text" ! name "torrentnumber" ! size "5"
+    input ! type_ "text" ! name "movedir" ! size "50"
+    input ! type_ "submit" ! value "Move torrent number to directory"
 
 renderDir :: String -> [FileEntry] -> [FileEntry] -> Html
 renderDir dir fs ds =
@@ -90,6 +102,8 @@ theFooter = nav ! class_ "navbar navbar-default navbar-fixed-bottom" $
             H.div ! class_ "footer" $ do
               a ! class_ "navbar-link" ! href "/files/"     $ "file serving"
               a ! class_ "navbar-link" ! href "/upload"     $ "file uploading"
+              a ! class_ "navbar-link" ! href "/torrents"   $ "Upload Torrents"
+              a ! class_ "navbar-link" ! href "/torrentstatus" $ "Torrent Status"
               -- a ! class_ "navbar-link" ! href "/donnerator" $ "donnerisms"
               -- a ! class_ "navbar-link" ! href "/donnerfile" $ "donnerfile"
               -- a ! class_ "navbar-link" ! href "/donneradd"  $ "add to donnerFile"

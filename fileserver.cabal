@@ -33,9 +33,11 @@ executable one
                      , unix
 --                     , time < 1.5
                      , old-locale
+                     , posix-escape
+                     , blaze-markup
 -- for donnerator
                      , process
 
-  ghc-options: -fwarn-unused-imports -O2
+  ghc-options: -fwarn-unused-imports -O2 -threaded
   -- hs-source-dirs:
   default-language:    Haskell2010
